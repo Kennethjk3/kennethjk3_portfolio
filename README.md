@@ -13,4 +13,19 @@
   4. in Routes.jsx add var {Page} and require
     -in var Route add path and hander
 
-- to add CSS in .jsx, this is the format: ''' <p style={{backgroundColor:'#808080' }}
+- CSS/styling can be added by:
+  -creating a .css file and importing it to main .js file
+  -creating a .css file for each individual component and importing it the component's .jsx file
+  -creating a ```var style={}``` in a component's .jsx file and adding it inline with the html element..  
+  - example:
+  ```
+  var style = {
+      backgroundColor='#roRoSexyBlue'
+  };  
+  var code = React.createCode({
+      render: code () {
+        return (
+          <p style={style}> I'm a leaf on the wind... </p>
+        etc.
+      etc.
+  ```

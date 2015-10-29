@@ -23735,6 +23735,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var React = __webpack_require__(1);
 
+	var style = {
+	  color: '#42ff00'
+	};
+
 	var Project = React.createClass({
 	  displayName: 'Project',
 
@@ -23742,7 +23746,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return React.createElement(
 	      'main',
 	      null,
-	      'Project component'
+	      React.createElement(
+	        'p',
+	        { style: style },
+	        'Project component'
+	      )
 	    );
 	  }
 	});
