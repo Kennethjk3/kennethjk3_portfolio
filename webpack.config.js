@@ -12,11 +12,23 @@ module.exports = {
 
   module: {
     loaders: [
-      { test: /\.jsx$/, loader: 'babel-loader' }
+      { test: /\.jsx$/, loader: 'babel' },
+      { test: /\.css/, loader: 'css-loader!cssnext-loader' }
     ]
   },
 
   plugins: [
     new StaticSiteGeneratorPlugin('bundle.js', data.routes, data)
-  ]
+  ],
+
+
+  cssnext: {
+    compress: true,
+    features: {
+      rem: false,
+      pseudoElements: false,
+      colorRgba: false
+    }
+  }
+
 }

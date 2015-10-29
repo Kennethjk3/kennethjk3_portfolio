@@ -2,6 +2,8 @@ var React = require('react')
 var Router = require('react-router')
 var RouteHandler = Router.RouteHandler
 var Header = require('../components/Header.jsx')
+var css = require('../css/base.css')
+
 
 var Root = React.createClass({
   render: function () {
@@ -13,9 +15,10 @@ var Root = React.createClass({
       <html>
         <head>
           <title>{this.props.title}</title>
+          <style dangerouslySetInnerHTML={{ __html: css }} />
         </head>
-        <body style={{backgroundColor: '#808080' }}>
-          <Header {...this.props} />
+        <body className='p2'>
+          <Header />
           <RouteHandler {...this.props} />
           <script
             id='initial-props'
