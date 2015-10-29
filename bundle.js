@@ -23610,7 +23610,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      ),
 	      React.createElement(
 	        'body',
-	        null,
+	        { style: { backgroundColor: '#808080' } },
 	        React.createElement(Header, this.props),
 	        React.createElement(RouteHandler, this.props),
 	        React.createElement('script', {
@@ -23647,10 +23647,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	      null,
 	      React.createElement(
 	        'ul',
-	        { style: { textAlign: 'center' } },
+	        { style: { display: 'inline', listStyleType: 'none' } },
 	        React.createElement(
 	          'li',
-	          null,
+	          { style: { display: 'inline', padding: '20px' } },
 	          React.createElement(
 	            Link,
 	            { to: '/' },
@@ -23659,7 +23659,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        ),
 	        React.createElement(
 	          'li',
-	          null,
+	          { style: { display: 'inline', padding: '20px' } },
 	          React.createElement(
 	            Link,
 	            { to: '/about' },
@@ -23668,7 +23668,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        ),
 	        React.createElement(
 	          'li',
-	          null,
+	          { style: { display: 'inline', padding: '20px' } },
 	          React.createElement(
 	            Link,
 	            { to: '/project' },
