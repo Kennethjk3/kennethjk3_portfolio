@@ -5,11 +5,14 @@ var DefaultRoute = Router.DefaultRoute
 var Root = require('./components/Root.jsx')
 var Index = require('./components/Index.jsx')
 var About = require('./components/About.jsx')
+var Project = require('./components/Project.jsx')
+
 
 var Routes = (
   <Route handler={Root} path='/'>
     <DefaultRoute handler={Index} />
     <Route path='/about' handler={About} />
+    <Route path='/project' handler={Project} />
   </Route>
 )
 

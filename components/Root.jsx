@@ -9,13 +9,12 @@ var Root = React.createClass({
     var initialProps = {
       __html: safeStringify(this.props)
     }
-
     return (
       <html>
         <head>
           <title>{this.props.title}</title>
         </head>
-        <body>
+        <body style={{backgroundColor: '#808080' }}>
           <Header {...this.props} />
           <RouteHandler {...this.props} />
           <script

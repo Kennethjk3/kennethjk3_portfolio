@@ -23565,12 +23565,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	var Root = __webpack_require__(197);
 	var Index = __webpack_require__(199);
 	var About = __webpack_require__(200);
+	var Project = __webpack_require__(201);
 
 	var Routes = React.createElement(
 	  Route,
 	  { handler: Root, path: '/' },
 	  React.createElement(DefaultRoute, { handler: Index }),
-	  React.createElement(Route, { path: '/about', handler: About })
+	  React.createElement(Route, { path: '/about', handler: About }),
+	  React.createElement(Route, { path: '/project', handler: Project })
 	);
 
 	module.exports = Routes;
@@ -23594,7 +23596,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var initialProps = {
 	      __html: safeStringify(this.props)
 	    };
-
 	    return React.createElement(
 	      'html',
 	      null,
@@ -23645,14 +23646,36 @@ return /******/ (function(modules) { // webpackBootstrap
 	      'header',
 	      null,
 	      React.createElement(
-	        Link,
-	        { to: '/' },
-	        'Index'
-	      ),
-	      React.createElement(
-	        Link,
-	        { to: '/about' },
-	        'About'
+	        'ul',
+	        { style: { textAlign: 'center' } },
+	        React.createElement(
+	          'li',
+	          null,
+	          React.createElement(
+	            Link,
+	            { to: '/' },
+	            'Index'
+	          )
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          React.createElement(
+	            Link,
+	            { to: '/about' },
+	            'About'
+	          )
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          React.createElement(
+	            Link,
+	            { to: '/project' },
+	            'Project'
+	          )
+	        ),
+	        React.createElement('hr', null)
 	      )
 	    );
 	  }
@@ -23703,6 +23726,28 @@ return /******/ (function(modules) { // webpackBootstrap
 	});
 
 	module.exports = About;
+
+/***/ },
+/* 201 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var Project = React.createClass({
+	  displayName: 'Project',
+
+	  render: function render() {
+	    return React.createElement(
+	      'main',
+	      null,
+	      'Project component'
+	    );
+	  }
+	});
+
+	module.exports = Project;
 
 /***/ }
 /******/ ])
