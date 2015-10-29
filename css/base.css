@@ -4,13 +4,23 @@
   --font-family: 'Avenir Next', 'Hevletica Neue', sans-serif;
 }
 body {
-  background-color: #808080;
+  background-color: #292929;
   font-family: 'Avenir Next', 'Hevletica Neue', sans-serif;
-
+  color: #c1c1c1;
 }
 ul li {
   display: inline;
   list-style-type: none;
   padding-right: 20px;
   text-align: justify;
+
+}
+a {
+  color:#00b6f9;
+  }
+img {
+  display: inline;
+  height: 75px;
+  width: 75px;
+  float:right;
 }

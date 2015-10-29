@@ -9,9 +9,10 @@ var Header = React.createClass({
     return (
       <header>
         <ul>
-          <li><Link to='/'>Index</Link></li>
+          <li className="Kpic"><img src="../css/img/K.png"></img></li>
+          <li><Link to='/'>Home</Link></li>
           <li><Link to='/about'>About</Link></li>
-          <li><Link to='/project'>Project</Link></li>
+          <li><Link to='/project'>Projects</Link></li>
         </ul>
         <hr />
       </header>
