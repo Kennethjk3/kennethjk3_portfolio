@@ -2,6 +2,8 @@ var React = require('react')
 var Router = require('react-router')
 var RouteHandler = Router.RouteHandler
 var Header = require('../components/Header.jsx')
+var Footer = require('../components/Footer.jsx')
+
 var css = require('../css/base.css')
 
 
@@ -17,7 +19,7 @@ var Root = React.createClass({
           <title>{this.props.title}</title>
           <style dangerouslySetInnerHTML={{ __html: css }} />
         </head>
-        <body className='p2'>
+        <body>
           <Header />
           <RouteHandler {...this.props} />
           <script
@@ -25,6 +27,8 @@ var Root = React.createClass({
             type='application/json'
             dangerouslySetInnerHTML={initialProps} />
           <script src='bundle.js' />
+          <Footer />
+
         </body>
       </html>
     )
