@@ -26,22 +26,17 @@ a {
   float: right;
 }
 .picMe{
-  display: inline;
+  display: inline-block;
   height: 300px;
   width: auto;
   border-radius: 175px;
-  margin-top: 200px;
-  margin-left: 100px;
 }
 
 .indexContent {
 }
 
 .hContent {
-  display: inline;
-  margin-top: 100px;
-  margin-left: 200px;
-  margin-right: 100px;
+  display: inline-block;
   float: right;
 }
 .footer {
