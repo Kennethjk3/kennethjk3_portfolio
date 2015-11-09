@@ -26,7 +26,7 @@ a {
   float: right;
 }
 .picMe{
-  display: inline-block;
+  display: inline;
   height: 300px;
   width: auto;
   border-radius: 175px;
@@ -36,7 +36,7 @@ a {
 }
 
 .hContent {
-  display: inline-block;
+  display: inline;
   float: right;
 }
 .footer {
