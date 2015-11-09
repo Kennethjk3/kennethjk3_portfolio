@@ -23753,12 +23753,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	        'body',
 	        null,
 	        React.createElement(Header, null),
-	        React.createElement(RouteHandler, this.props),
-	        React.createElement('script', {
-	          id: 'initial-props',
-	          type: 'application/json',
-	          dangerouslySetInnerHTML: initialProps }),
-	        React.createElement('script', { src: 'bundle.js' }),
+	        React.createElement(
+	          'div',
+	          { className: 'container' },
+	          React.createElement(RouteHandler, this.props),
+	          React.createElement('script', {
+	            id: 'initial-props',
+	            type: 'application/json',
+	            dangerouslySetInnerHTML: initialProps }),
+	          React.createElement('script', { src: 'bundle.js' })
+	        ),
 	        React.createElement(Footer, null)
 	      )
 	    );
@@ -23788,42 +23792,42 @@ return /******/ (function(modules) { // webpackBootstrap
 	      'header',
 	      null,
 	      React.createElement(
-	        'ul',
-	        null,
+	        'div',
+	        { className: 'nav' },
 	        React.createElement(
-	          'li',
-	          { className: 'picK' },
-	          React.createElement('img', { src: '../css/img/K.png' })
-	        ),
-	        React.createElement(
-	          'li',
+	          'ul',
 	          null,
+	          React.createElement('img', { className: 'picK', src: '../css/img/K.png' }),
 	          React.createElement(
-	            Link,
-	            { to: '/' },
-	            'Home'
+	            'li',
+	            null,
+	            React.createElement(
+	              Link,
+	              { to: '/' },
+	              'Home'
+	            )
+	          ),
+	          React.createElement(
+	            'li',
+	            null,
+	            React.createElement(
+	              Link,
+	              { to: '/about' },
+	              'About'
+	            )
+	          ),
+	          React.createElement(
+	            'li',
+	            null,
+	            React.createElement(
+	              Link,
+	              { to: '/project' },
+	              'Projects'
+	            )
 	          )
 	        ),
-	        React.createElement(
-	          'li',
-	          null,
-	          React.createElement(
-	            Link,
-	            { to: '/about' },
-	            'About'
-	          )
-	        ),
-	        React.createElement(
-	          'li',
-	          null,
-	          React.createElement(
-	            Link,
-	            { to: '/project' },
-	            'Projects'
-	          )
-	        )
-	      ),
-	      React.createElement('hr', null)
+	        React.createElement('hr', null)
+	      )
 	    );
 	  }
 	});
@@ -23846,18 +23850,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	  render: function render() {
 	    return React.createElement(
 	      'footer',
-	      { className: 'footer' },
-	      React.createElement('hr', null),
+	      null,
 	      React.createElement(
-	        'p',
-	        null,
-	        'This site is designed using ',
+	        'div',
+	        { className: 'footer' },
+	        React.createElement('hr', null),
 	        React.createElement(
-	          'a',
-	          { href: 'https://facebook.github.io/react/index.html' },
-	          'React'
-	        ),
-	        '!'
+	          'p',
+	          null,
+	          'This site is designed using ',
+	          React.createElement(
+	            'a',
+	            { href: 'https://facebook.github.io/react/index.html' },
+	            'React'
+	          ),
+	          '!'
+	        )
 	      )
 	    );
 	  }
@@ -23874,7 +23882,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, "body{margin:0}img{max-width:100%}svg{max-height:100%}fieldset,input,select,textarea{font-family:inherit;font-size:1rem;box-sizing:border-box;margin-top:0;margin-bottom:0}label{vertical-align:middle}input[type=date],input[type=datetime-local],input[type=datetime],input[type=email],input[type=month],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=time],input[type=url],input[type=week]{height:2.25rem;padding:.5rem;vertical-align:middle;-webkit-appearance:none}select{line-height:1.75;padding:.5rem}select:not([multiple]){height:2.25rem;vertical-align:middle}textarea{line-height:1.75;padding:.5rem}table{border-collapse:separate;border-spacing:0;max-width:100%;width:100%}th{text-align:left;font-weight:700}td,th{padding:.25rem 1rem;line-height:inherit}th{vertical-align:bottom}td{vertical-align:top}body{line-height:1.5;font-size:100%}body,h1,h2,h3,h4,h5,h6{font-family:Avenir Next,Hevletica Neue,sans-serif}h1,h2,h3,h4,h5,h6{font-weight:700;line-height:1.25;margin-top:1em;margin-bottom:.5em}dl,ol,p,ul{margin-top:0;margin-bottom:1rem}code,pre,samp{font-family:Source Code Pro,Consolas,monospace;font-size:inherit}pre{margin-top:0;margin-bottom:1rem;overflow-x:scroll}h1{font-size:2rem}h2{font-size:1.5rem}h3{font-size:1.25rem}h4{font-size:1rem}h5{font-size:.875rem}h6{font-size:.75rem}body{color:#111;background-color:#fff}a{color:#0074d9;text-decoration:none}a:hover{text-decoration:underline}code,pre{background-color:transparent;border-radius:3px}hr{border:0;border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:rgba(0,0,0,.125)}.field{border:1px solid rgba(0,0,0,.125);border-radius:3px}.field.is-focused,.field:focus{outline:0;border-color:#0074d9;box-shadow:0 0 0 2px rgba(0,116,217,.5)}.field.is-disabled,.field:disabled{background-color:rgba(0,0,0,.125);opacity:.5}.field.is-read-only,.field:read-only:not(select){background-color:rgba(0,0,0,.125)}.field.is-success{border-color:#2ecc40}.field.is-success.is-focused,.field.is-success:focus{box-shadow:0 0 0 2px rgba(46,204,64,.5)}.field.is-warning{border-color:#ffdc00}.field.is-warning.is-focused,.field.is-warning:focus{box-shadow:0 0 0 2px rgba(255,220,0,.5)}.field.is-error,.field:invalid{border-color:#ff4136}.field.is-error.is-focused,.field.is-error:focus,.field:invalid.is-focused,.field:invalid:focus{box-shadow:0 0 0 2px rgba(255,65,54,.5)}.table-light td,.table-light th{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:rgba(0,0,0,.125)}.table-light tr:last-child td{border-bottom:0}.btn{font-family:inherit;font-size:inherit;font-weight:700;cursor:pointer;display:inline-block;line-height:1.125rem;padding:.5rem 1rem;margin:0;height:auto;border:1px solid transparent;vertical-align:middle;-webkit-appearance:none;color:inherit;background-color:transparent}.btn,.btn:hover{text-decoration:none}.btn:focus{outline:0;border-color:rgba(0,0,0,.125);box-shadow:0 0 0 3px rgba(0,0,0,.25)}::-moz-focus-inner{border:0;padding:0}.btn-primary{color:#fff;background-color:#0074d9;border-radius:3px}.btn-primary:hover{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.0625)}.btn-primary:active{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.125),inset 0 3px 4px 0 rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.125)}.btn-primary.is-disabled,.btn-primary:disabled{opacity:.5}.btn-outline,.btn-outline:hover{border-color:currentcolor}.btn-outline{border-radius:3px}.btn-outline:hover{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.0625)}.btn-outline:active{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.125),inset 0 3px 4px 0 rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.125)}.btn-outline.is-disabled,.btn-outline:disabled{opacity:.5}.h1{font-size:2rem}.h2{font-size:1.5rem}.h3{font-size:1.25rem}.h4{font-size:1rem}.h5{font-size:.875rem}.h6{font-size:.75rem}.bold{font-weight:700}.regular{font-weight:400}.italic{font-style:italic}.caps{text-transform:uppercase;letter-spacing:.2em}.left-align{text-align:left}.center{text-align:center}.right-align{text-align:right}.justify{text-align:justify}.nowrap{white-space:nowrap}.break-word{word-wrap:break-word}.truncate{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.list-reset{list-style:none;padding-left:0}.inline{display:inline}.block{display:block}.inline-block{display:inline-block}.table{display:table}.table-cell{display:table-cell}.overflow-hidden{overflow:hidden}.overflow-scroll{overflow:scroll}.overflow-auto{overflow:auto}.clearfix:after,.clearfix:before{content:\" \";display:table}.clearfix:after{clear:both}.left{float:left}.right{float:right}.fit{max-width:100%}.border-box{box-sizing:border-box}.align-baseline{vertical-align:baseline}.align-top{vertical-align:top}.align-middle{vertical-align:middle}.align-bottom{vertical-align:bottom}.m0{margin:0}.mt0{margin-top:0}.mr0{margin-right:0}.mb0{margin-bottom:0}.ml0{margin-left:0}.m1{margin:.5rem}.mt1{margin-top:.5rem}.mr1{margin-right:.5rem}.mb1{margin-bottom:.5rem}.ml1{margin-left:.5rem}.m2{margin:1rem}.mt2{margin-top:1rem}.mr2{margin-right:1rem}.mb2{margin-bottom:1rem}.ml2{margin-left:1rem}.m3{margin:2rem}.mt3{margin-top:2rem}.mr3{margin-right:2rem}.mb3{margin-bottom:2rem}.ml3{margin-left:2rem}.m4{margin:4rem}.mt4{margin-top:4rem}.mr4{margin-right:4rem}.mb4{margin-bottom:4rem}.ml4{margin-left:4rem}.mxn1{margin-left:-.5rem;margin-right:-.5rem}.mxn2{margin-left:-1rem;margin-right:-1rem}.mxn3{margin-left:-2rem;margin-right:-2rem}.mxn4{margin-left:-4rem;margin-right:-4rem}.mx-auto{margin-left:auto;margin-right:auto}.p0{padding:0}.p1{padding:.5rem}.py1{padding-top:.5rem;padding-bottom:.5rem}.px1{padding-left:.5rem;padding-right:.5rem}.p2{padding:1rem}.py2{padding-top:1rem;padding-bottom:1rem}.px2{padding-left:1rem;padding-right:1rem}.p3{padding:2rem}.py3{padding-top:2rem;padding-bottom:2rem}.px3{padding-left:2rem;padding-right:2rem}.p4{padding:4rem}.py4{padding-top:4rem;padding-bottom:4rem}.px4{padding-left:4rem;padding-right:4rem}.relative{position:relative}.absolute{position:absolute}.fixed{position:fixed}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.left-0{left:0}.z1{z-index:1}.z2{z-index:2}.z3{z-index:3}.z4{z-index:4}.lg-show,.md-show,.sm-show{display:none!important}@media (min-width:40em){.sm-show{display:block!important}}@media (min-width:52em){.md-show{display:block!important}}@media (min-width:64em){.lg-show{display:block!important}}@media (min-width:40em){.sm-hide{display:none!important}}@media (min-width:52em){.md-hide{display:none!important}}@media (min-width:64em){.lg-hide{display:none!important}}.display-none{display:none!important}.hide{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}.container{max-width:64em;margin-left:auto;margin-right:auto}.col{float:left}.col,.col-right{box-sizing:border-box}.col-right{float:right}.col-1{width:8.33333%}.col-2{width:16.66667%}.col-3{width:25%}.col-4{width:33.33333%}.col-5{width:41.66667%}.col-6{width:50%}.col-7{width:58.33333%}.col-8{width:66.66667%}.col-9{width:75%}.col-10{width:83.33333%}.col-11{width:91.66667%}.col-12{width:100%}@media (min-width:40em){.sm-col{float:left;box-sizing:border-box}.sm-col-right{float:right;box-sizing:border-box}.sm-col-1{width:8.33333%}.sm-col-2{width:16.66667%}.sm-col-3{width:25%}.sm-col-4{width:33.33333%}.sm-col-5{width:41.66667%}.sm-col-6{width:50%}.sm-col-7{width:58.33333%}.sm-col-8{width:66.66667%}.sm-col-9{width:75%}.sm-col-10{width:83.33333%}.sm-col-11{width:91.66667%}.sm-col-12{width:100%}}@media (min-width:52em){.md-col{float:left;box-sizing:border-box}.md-col-right{float:right;box-sizing:border-box}.md-col-1{width:8.33333%}.md-col-2{width:16.66667%}.md-col-3{width:25%}.md-col-4{width:33.33333%}.md-col-5{width:41.66667%}.md-col-6{width:50%}.md-col-7{width:58.33333%}.md-col-8{width:66.66667%}.md-col-9{width:75%}.md-col-10{width:83.33333%}.md-col-11{width:91.66667%}.md-col-12{width:100%}}@media (min-width:64em){.lg-col{float:left;box-sizing:border-box}.lg-col-right{float:right;box-sizing:border-box}.lg-col-1{width:8.33333%}.lg-col-2{width:16.66667%}.lg-col-3{width:25%}.lg-col-4{width:33.33333%}.lg-col-5{width:41.66667%}.lg-col-6{width:50%}.lg-col-7{width:58.33333%}.lg-col-8{width:66.66667%}.lg-col-9{width:75%}.lg-col-10{width:83.33333%}.lg-col-11{width:91.66667%}.lg-col-12{width:100%}}.flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.flex-column{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.flex-wrap{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.flex-center{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex-baseline{-webkit-box-align:baseline;-webkit-align-items:baseline;-ms-flex-align:baseline;align-items:baseline}.flex-stretch{-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch}.flex-start{-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start}.flex-end{-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end}.flex-justify{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.flex-auto{-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;min-width:0;min-height:0}.flex-grow{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}.flex-none{-webkit-box-flex:0;-webkit-flex:none;-ms-flex:none;flex:none}.flex-first{-webkit-box-ordinal-group:0;-webkit-order:-1;-ms-flex-order:-1;order:-1}.flex-last{-webkit-box-ordinal-group:100000;-webkit-order:99999;-ms-flex-order:99999;order:99999}@media (min-width:40em){.sm-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}}@media (min-width:52em){.md-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}}@media (min-width:64em){.lg-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}}.border{border:1px solid rgba(0,0,0,.125)}.border-top{border-top-style:solid;border-top-width:1px;border-top-color:rgba(0,0,0,.125)}.border-right{border-right-style:solid;border-right-width:1px;border-right-color:rgba(0,0,0,.125)}.border-bottom{border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:rgba(0,0,0,.125)}.border-left{border-left-style:solid;border-left-width:1px;border-left-color:rgba(0,0,0,.125)}.border-none{border:0}.rounded{border-radius:3px}.circle{border-radius:50%}.rounded-top{border-radius:3px 3px 0 0}.rounded-right{border-radius:0 3px 3px 0}.rounded-bottom{border-radius:0 0 3px 3px}.rounded-left{border-radius:3px 0 0 3px}.not-rounded{border-radius:0}.black{color:#111}.gray{color:#aaa}.silver{color:#ddd}.white{color:#fff}.aqua{color:#7fdbff}.blue{color:#0074d9}.navy{color:#001f3f}.teal{color:#39cccc}.green{color:#2ecc40}.olive{color:#3d9970}.lime{color:#01ff70}.yellow{color:#ffdc00}.orange{color:#ff851b}.red{color:#ff4136}.fuchsia{color:#f012be}.purple{color:#b10dc9}.maroon{color:#85144b}.color-inherit{color:inherit}.muted{opacity:.5}.bg-black{background-color:#111}.bg-gray{background-color:#aaa}.bg-silver{background-color:#ddd}.bg-white{background-color:#fff}.bg-aqua{background-color:#7fdbff}.bg-blue{background-color:#0074d9}.bg-navy{background-color:#001f3f}.bg-teal{background-color:#39cccc}.bg-green{background-color:#2ecc40}.bg-olive{background-color:#3d9970}.bg-lime{background-color:#01ff70}.bg-yellow{background-color:#ffdc00}.bg-orange{background-color:#ff851b}.bg-red{background-color:#ff4136}.bg-fuchsia{background-color:#f012be}.bg-purple{background-color:#b10dc9}.bg-maroon{background-color:#85144b}.bg-darken-1{background-color:rgba(0,0,0,.0625)}.bg-darken-2{background-color:rgba(0,0,0,.125)}.bg-darken-3{background-color:rgba(0,0,0,.25)}.bg-darken-4{background-color:rgba(0,0,0,.5)}.bg-lighten-1{background-color:hsla(0,0%,100%,.0625)}.bg-lighten-2{background-color:hsla(0,0%,100%,.125)}.bg-lighten-3{background-color:hsla(0,0%,100%,.25)}.bg-lighten-4{background-color:hsla(0,0%,100%,.5)}body{background-color:#292929;font-family:Avenir Next,Hevletica Neue,sans-serif;color:#c1c1c1}ul li{display:inline;list-style-type:none;padding-right:20px}a{color:#00b6f9}.picK{height:75px;width:75px;float:right}.picK,.picMe{display:inline}.picMe{height:300px;width:auto;border-radius:175px}.hContent{display:inline;float:right}.footer{margin-top:350px;height:auto;width:100%;bottom:0;text-align:right}", ""]);
+	exports.push([module.id, "body{margin:0}img{max-width:100%}svg{max-height:100%}fieldset,input,select,textarea{font-family:inherit;font-size:1rem;box-sizing:border-box;margin-top:0;margin-bottom:0}label{vertical-align:middle}input[type=date],input[type=datetime-local],input[type=datetime],input[type=email],input[type=month],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=time],input[type=url],input[type=week]{height:2.25rem;padding:.5rem;vertical-align:middle;-webkit-appearance:none}select{line-height:1.75;padding:.5rem}select:not([multiple]){height:2.25rem;vertical-align:middle}textarea{line-height:1.75;padding:.5rem}table{border-collapse:separate;border-spacing:0;max-width:100%;width:100%}th{text-align:left;font-weight:700}td,th{padding:.25rem 1rem;line-height:inherit}th{vertical-align:bottom}td{vertical-align:top}body{line-height:1.5;font-size:100%}body,h1,h2,h3,h4,h5,h6{font-family:Avenir Next,Hevletica Neue,sans-serif}h1,h2,h3,h4,h5,h6{font-weight:700;line-height:1.25;margin-top:1em;margin-bottom:.5em}dl,ol,p,ul{margin-top:0;margin-bottom:1rem}code,pre,samp{font-family:Source Code Pro,Consolas,monospace;font-size:inherit}pre{margin-top:0;margin-bottom:1rem;overflow-x:scroll}h1{font-size:2rem}h2{font-size:1.5rem}h3{font-size:1.25rem}h4{font-size:1rem}h5{font-size:.875rem}h6{font-size:.75rem}body{color:#111;background-color:#fff}a{color:#0074d9;text-decoration:none}a:hover{text-decoration:underline}code,pre{background-color:transparent;border-radius:3px}hr{border:0;border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:rgba(0,0,0,.125)}.field{border:1px solid rgba(0,0,0,.125);border-radius:3px}.field.is-focused,.field:focus{outline:0;border-color:#0074d9;box-shadow:0 0 0 2px rgba(0,116,217,.5)}.field.is-disabled,.field:disabled{background-color:rgba(0,0,0,.125);opacity:.5}.field.is-read-only,.field:read-only:not(select){background-color:rgba(0,0,0,.125)}.field.is-success{border-color:#2ecc40}.field.is-success.is-focused,.field.is-success:focus{box-shadow:0 0 0 2px rgba(46,204,64,.5)}.field.is-warning{border-color:#ffdc00}.field.is-warning.is-focused,.field.is-warning:focus{box-shadow:0 0 0 2px rgba(255,220,0,.5)}.field.is-error,.field:invalid{border-color:#ff4136}.field.is-error.is-focused,.field.is-error:focus,.field:invalid.is-focused,.field:invalid:focus{box-shadow:0 0 0 2px rgba(255,65,54,.5)}.table-light td,.table-light th{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:rgba(0,0,0,.125)}.table-light tr:last-child td{border-bottom:0}.btn{font-family:inherit;font-size:inherit;font-weight:700;cursor:pointer;display:inline-block;line-height:1.125rem;padding:.5rem 1rem;margin:0;height:auto;border:1px solid transparent;vertical-align:middle;-webkit-appearance:none;color:inherit;background-color:transparent}.btn,.btn:hover{text-decoration:none}.btn:focus{outline:0;border-color:rgba(0,0,0,.125);box-shadow:0 0 0 3px rgba(0,0,0,.25)}::-moz-focus-inner{border:0;padding:0}.btn-primary{color:#fff;background-color:#0074d9;border-radius:3px}.btn-primary:hover{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.0625)}.btn-primary:active{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.125),inset 0 3px 4px 0 rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.125)}.btn-primary.is-disabled,.btn-primary:disabled{opacity:.5}.btn-outline,.btn-outline:hover{border-color:currentcolor}.btn-outline{border-radius:3px}.btn-outline:hover{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.0625)}.btn-outline:active{box-shadow:inset 0 0 0 20rem rgba(0,0,0,.125),inset 0 3px 4px 0 rgba(0,0,0,.25),0 0 1px rgba(0,0,0,.125)}.btn-outline.is-disabled,.btn-outline:disabled{opacity:.5}.h1{font-size:2rem}.h2{font-size:1.5rem}.h3{font-size:1.25rem}.h4{font-size:1rem}.h5{font-size:.875rem}.h6{font-size:.75rem}.bold{font-weight:700}.regular{font-weight:400}.italic{font-style:italic}.caps{text-transform:uppercase;letter-spacing:.2em}.left-align{text-align:left}.center{text-align:center}.right-align{text-align:right}.justify{text-align:justify}.nowrap{white-space:nowrap}.break-word{word-wrap:break-word}.truncate{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.list-reset{list-style:none;padding-left:0}.inline{display:inline}.block{display:block}.inline-block{display:inline-block}.table{display:table}.table-cell{display:table-cell}.overflow-hidden{overflow:hidden}.overflow-scroll{overflow:scroll}.overflow-auto{overflow:auto}.clearfix:after,.clearfix:before{content:\" \";display:table}.clearfix:after{clear:both}.left{float:left}.right{float:right}.fit{max-width:100%}.border-box{box-sizing:border-box}.align-baseline{vertical-align:baseline}.align-top{vertical-align:top}.align-middle{vertical-align:middle}.align-bottom{vertical-align:bottom}.m0{margin:0}.mt0{margin-top:0}.mr0{margin-right:0}.mb0{margin-bottom:0}.ml0{margin-left:0}.m1{margin:.5rem}.mt1{margin-top:.5rem}.mr1{margin-right:.5rem}.mb1{margin-bottom:.5rem}.ml1{margin-left:.5rem}.m2{margin:1rem}.mt2{margin-top:1rem}.mr2{margin-right:1rem}.mb2{margin-bottom:1rem}.ml2{margin-left:1rem}.m3{margin:2rem}.mt3{margin-top:2rem}.mr3{margin-right:2rem}.mb3{margin-bottom:2rem}.ml3{margin-left:2rem}.m4{margin:4rem}.mt4{margin-top:4rem}.mr4{margin-right:4rem}.mb4{margin-bottom:4rem}.ml4{margin-left:4rem}.mxn1{margin-left:-.5rem;margin-right:-.5rem}.mxn2{margin-left:-1rem;margin-right:-1rem}.mxn3{margin-left:-2rem;margin-right:-2rem}.mxn4{margin-left:-4rem;margin-right:-4rem}.mx-auto{margin-left:auto;margin-right:auto}.p0{padding:0}.p1{padding:.5rem}.py1{padding-top:.5rem;padding-bottom:.5rem}.px1{padding-left:.5rem;padding-right:.5rem}.p2{padding:1rem}.py2{padding-top:1rem;padding-bottom:1rem}.px2{padding-left:1rem;padding-right:1rem}.p3{padding:2rem}.py3{padding-top:2rem;padding-bottom:2rem}.px3{padding-left:2rem;padding-right:2rem}.p4{padding:4rem}.py4{padding-top:4rem;padding-bottom:4rem}.px4{padding-left:4rem;padding-right:4rem}.relative{position:relative}.absolute{position:absolute}.fixed{position:fixed}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.left-0{left:0}.z1{z-index:1}.z2{z-index:2}.z3{z-index:3}.z4{z-index:4}.lg-show,.md-show,.sm-show{display:none!important}@media (min-width:40em){.sm-show{display:block!important}}@media (min-width:52em){.md-show{display:block!important}}@media (min-width:64em){.lg-show{display:block!important}}@media (min-width:40em){.sm-hide{display:none!important}}@media (min-width:52em){.md-hide{display:none!important}}@media (min-width:64em){.lg-hide{display:none!important}}.display-none{display:none!important}.hide{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}.container{max-width:64em;margin-left:auto;margin-right:auto}.col{float:left}.col,.col-right{box-sizing:border-box}.col-right{float:right}.col-1{width:8.33333%}.col-2{width:16.66667%}.col-3{width:25%}.col-4{width:33.33333%}.col-5{width:41.66667%}.col-6{width:50%}.col-7{width:58.33333%}.col-8{width:66.66667%}.col-9{width:75%}.col-10{width:83.33333%}.col-11{width:91.66667%}.col-12{width:100%}@media (min-width:40em){.sm-col{float:left;box-sizing:border-box}.sm-col-right{float:right;box-sizing:border-box}.sm-col-1{width:8.33333%}.sm-col-2{width:16.66667%}.sm-col-3{width:25%}.sm-col-4{width:33.33333%}.sm-col-5{width:41.66667%}.sm-col-6{width:50%}.sm-col-7{width:58.33333%}.sm-col-8{width:66.66667%}.sm-col-9{width:75%}.sm-col-10{width:83.33333%}.sm-col-11{width:91.66667%}.sm-col-12{width:100%}}@media (min-width:52em){.md-col{float:left;box-sizing:border-box}.md-col-right{float:right;box-sizing:border-box}.md-col-1{width:8.33333%}.md-col-2{width:16.66667%}.md-col-3{width:25%}.md-col-4{width:33.33333%}.md-col-5{width:41.66667%}.md-col-6{width:50%}.md-col-7{width:58.33333%}.md-col-8{width:66.66667%}.md-col-9{width:75%}.md-col-10{width:83.33333%}.md-col-11{width:91.66667%}.md-col-12{width:100%}}@media (min-width:64em){.lg-col{float:left;box-sizing:border-box}.lg-col-right{float:right;box-sizing:border-box}.lg-col-1{width:8.33333%}.lg-col-2{width:16.66667%}.lg-col-3{width:25%}.lg-col-4{width:33.33333%}.lg-col-5{width:41.66667%}.lg-col-6{width:50%}.lg-col-7{width:58.33333%}.lg-col-8{width:66.66667%}.lg-col-9{width:75%}.lg-col-10{width:83.33333%}.lg-col-11{width:91.66667%}.lg-col-12{width:100%}}.flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.flex-column{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.flex-wrap{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.flex-center{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.flex-baseline{-webkit-box-align:baseline;-webkit-align-items:baseline;-ms-flex-align:baseline;align-items:baseline}.flex-stretch{-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch}.flex-start{-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start}.flex-end{-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end}.flex-justify{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.flex-auto{-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;min-width:0;min-height:0}.flex-grow{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}.flex-none{-webkit-box-flex:0;-webkit-flex:none;-ms-flex:none;flex:none}.flex-first{-webkit-box-ordinal-group:0;-webkit-order:-1;-ms-flex-order:-1;order:-1}.flex-last{-webkit-box-ordinal-group:100000;-webkit-order:99999;-ms-flex-order:99999;order:99999}@media (min-width:40em){.sm-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}}@media (min-width:52em){.md-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}}@media (min-width:64em){.lg-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}}.border{border:1px solid rgba(0,0,0,.125)}.border-top{border-top-style:solid;border-top-width:1px;border-top-color:rgba(0,0,0,.125)}.border-right{border-right-style:solid;border-right-width:1px;border-right-color:rgba(0,0,0,.125)}.border-bottom{border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:rgba(0,0,0,.125)}.border-left{border-left-style:solid;border-left-width:1px;border-left-color:rgba(0,0,0,.125)}.border-none{border:0}.rounded{border-radius:3px}.circle{border-radius:50%}.rounded-top{border-radius:3px 3px 0 0}.rounded-right{border-radius:0 3px 3px 0}.rounded-bottom{border-radius:0 0 3px 3px}.rounded-left{border-radius:3px 0 0 3px}.not-rounded{border-radius:0}.black{color:#111}.gray{color:#aaa}.silver{color:#ddd}.white{color:#fff}.aqua{color:#7fdbff}.blue{color:#0074d9}.navy{color:#001f3f}.teal{color:#39cccc}.green{color:#2ecc40}.olive{color:#3d9970}.lime{color:#01ff70}.yellow{color:#ffdc00}.orange{color:#ff851b}.red{color:#ff4136}.fuchsia{color:#f012be}.purple{color:#b10dc9}.maroon{color:#85144b}.color-inherit{color:inherit}.muted{opacity:.5}.bg-black{background-color:#111}.bg-gray{background-color:#aaa}.bg-silver{background-color:#ddd}.bg-white{background-color:#fff}.bg-aqua{background-color:#7fdbff}.bg-blue{background-color:#0074d9}.bg-navy{background-color:#001f3f}.bg-teal{background-color:#39cccc}.bg-green{background-color:#2ecc40}.bg-olive{background-color:#3d9970}.bg-lime{background-color:#01ff70}.bg-yellow{background-color:#ffdc00}.bg-orange{background-color:#ff851b}.bg-red{background-color:#ff4136}.bg-fuchsia{background-color:#f012be}.bg-purple{background-color:#b10dc9}.bg-maroon{background-color:#85144b}.bg-darken-1{background-color:rgba(0,0,0,.0625)}.bg-darken-2{background-color:rgba(0,0,0,.125)}.bg-darken-3{background-color:rgba(0,0,0,.25)}.bg-darken-4{background-color:rgba(0,0,0,.5)}.bg-lighten-1{background-color:hsla(0,0%,100%,.0625)}.bg-lighten-2{background-color:hsla(0,0%,100%,.125)}.bg-lighten-3{background-color:hsla(0,0%,100%,.25)}.bg-lighten-4{background-color:hsla(0,0%,100%,.5)}*,:after,:before{box-sizing:inherit}html{height:100%;box-sizing:border-box}body{position:relative;margin:0;padding-bottom:6rem;min-height:100%;background-color:#2d2d2d;font-family:Avenir Next,Hevletica Neue,sans-serif;color:#c1c1c1}.nav ul{list-style:none;text-align:center;padding:0;margin:0}.nav li{display:inline-block;margin-right:20px;font-family:Oswald,sans-serif;font-size:1.2em;line-height:40px;height:40px}@media screen and (min-width:600px){.nav li{display:inline-block;width:90pt;height:50px;line-height:50px;font-size:1.4em}}.nav a{text-decoration:none;display:block;color:#00b1fc;-webkit-transition:.3s background-color;transition:.3s background-color}.container{margin:0 auto;padding-top:4pc;max-width:40pc;width:94%}.picK{display:inline;height:75px;width:75px;float:right}.picMe{height:300px;width:auto;border-radius:175px}.footer{position:absolute;right:0;bottom:0;left:0;background-color:#2a2a2a;width:100%;height:auto;text-align:right}", ""]);
 
 	// exports
 
@@ -23952,7 +23960,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	      { className: "indexContent" },
 	      React.createElement(
 	        "div",
-	        { className: "hContent" },
+	        null,
+	        React.createElement("img", { className: "picMe", src: "./css/img/Me.jpg" })
+	      ),
+	      React.createElement(
+	        "div",
+	        null,
 	        React.createElement(
 	          "h3",
 	          null,
@@ -23962,12 +23975,95 @@ return /******/ (function(modules) { // webpackBootstrap
 	          "p",
 	          null,
 	          "I'm Kenneth Kier and this site is all about me!"
+	        ),
+	        React.createElement(
+	          "h1",
+	          null,
+	          "A newt?"
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Why do you think that she is a witch? I have to push the pram a lot. Well, how'd you become king, then? But you are dressed as one…"
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "It's only a model. Bloody Peasant! Shut up! Well, how'd you become king, then?"
+	        ),
+	        React.createElement(
+	          "h2",
+	          null,
+	          "Ni! Ni! Ni! Ni!"
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Found them? In Mercia?! The coconut's tropical! He hasn't got shit all over him. Bloody Peasant! Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed!"
+	        ),
+	        React.createElement(
+	          "ol",
+	          null,
+	          React.createElement(
+	            "li",
+	            null,
+	            "Did you dress her up like this?"
+	          ),
+	          React.createElement(
+	            "li",
+	            null,
+	            "Burn her anyway!"
+	          ),
+	          React.createElement(
+	            "li",
+	            null,
+	            "Well, we did do the nose."
+	          )
+	        ),
+	        React.createElement(
+	          "h3",
+	          null,
+	          "You don't frighten us, English pig-dogs! Go and boil your bottoms, sons of a silly person! I blow my nose at you, so-called Ah-thoor Keeng, you and all your silly English K-n-n-n-n-n-n-n-niggits!"
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "You can't expect to wield supreme power just 'cause some watery tart threw a sword at you! What a strange person. And this isn't my nose. This is a false one. He hasn't got shit all over him. Well, what do you want?"
+	        ),
+	        React.createElement(
+	          "ul",
+	          null,
+	          React.createElement(
+	            "li",
+	            null,
+	            "A newt?"
+	          ),
+	          React.createElement(
+	            "li",
+	            null,
+	            "What do you mean?"
+	          ),
+	          React.createElement(
+	            "li",
+	            null,
+	            "The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. That is why I am your king."
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Well, I didn't vote for you. Who's that then? A newt? Shh! Knights, I bid you welcome to your new home. Let us ride to Camelot!"
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "The nose? You don't frighten us, English pig-dogs! Go and boil your bottoms, sons of a silly person! I blow my nose at you, so-called Ah-thoor Keeng, you and all your silly English K-n-n-n-n-n-n-n-niggits!"
+	        ),
+	        React.createElement(
+	          "p",
+	          null,
+	          "Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods. A newt? Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods. You can't expect to wield supreme power just cause some watery tart threw a sword at you!"
 	        )
-	      ),
-	      React.createElement(
-	        "div",
-	        null,
-	        React.createElement("img", { className: "picMe", src: "./css/img/Me.jpg" })
 	      )
 	    );
 	  }
@@ -23990,7 +24086,139 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return React.createElement(
 	      'main',
 	      null,
-	      'About component'
+	      React.createElement(
+	        'h1',
+	        null,
+	        'About component'
+	      ),
+	      React.createElement(
+	        'h1',
+	        null,
+	        'Hey, whatcha watching?'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Oh God, what have I done? Perhaps, but perhaps your civilization is merely the sewer of an even greater society above you! Anyhoo, your net-suits will allow you to experience Fry\'s worm infested bowels as if you were actually wriggling through them.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Soon enough. Yes, if you make it look like an electrical fire. When you do things right, people won\'t be sure you\'ve done anything at all. You seem malnourished. Are you suffering from intestinal parasites?'
+	      ),
+	      React.createElement(
+	        'h2',
+	        null,
+	        'Yep, I remember. They came in last at the Olympics, then retired to promote alcoholic beverages!'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Quite possible. We live long and are celebrated poopers. You don\'t know how to do any of those. Throw her in the brig. Isn\'t it true that you have been paid for your testimony? Noooooo!'
+	      ),
+	      React.createElement(
+	        'ol',
+	        null,
+	        React.createElement(
+	          'li',
+	          null,
+	          'Hey, what kinda party is this? There\'s no booze and only one hooker.'
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          'I don\'t know what you did, Fry, but once again, you screwed up! Now all the planets are gonna start cracking wise about our mamas.'
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          'Oh yeah, good luck with that.'
+	        )
+	      ),
+	      React.createElement(
+	        'h3',
+	        null,
+	        'Calculon is gonna kill us and it\'s all everybody else\'s fault!'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'I\'m a thing. Oh, I think we should just stay friends. Good man. Nixon\'s pro-war and pro-family. Kif might!'
+	      ),
+	      React.createElement(
+	        'ul',
+	        null,
+	        React.createElement(
+	          'li',
+	          null,
+	          'You\'re going back for the Countess, aren\'t you?'
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          'Large bet on myself in round one.'
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          'I feel like I was mauled by Jesus.'
+	        )
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'That\'s right, baby. I ain\'t your loverboy Flexo, the guy you love so much. You even love anyone pretending to be him! Bender, you risked your life to save me! I decline the title of Iron Cook and accept the lesser title of Zinc Saucier, which I just made up. Uhh… also, comes with double prize money.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar. It\'s a T. It goes "tuh". Ummm…to eBay? There, now he\'s trapped in a book I wrote: a crummy world of plot holes and spelling errors!'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'I had more, but you go ahead. Ah, computer dating. It\'s like pimping, but you rarely have to use the phrase "upside your head." Whoa a real live robot; or is that some kind of cheesy New Year\'s costume?'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Why not indeed! Whoa a real live robot; or is that some kind of cheesy New Year\'s costume? It\'s just like the story of the grasshopper and the octopus. All year long, the grasshopper kept burying acorns for winter, while the octopus mooched off his girlfriend and watched TV. But then the winter came, and the grasshopper died, and the octopus ate all his acorns. Also he got a race car. Is any of this getting through to you?'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'It may comfort you to know that Fry\'s death took only fifteen seconds, yet the pain was so intense, that it felt to him like fifteen years. And it goes without saying, it caused him to empty his bowels. I meant \'physically\'. Look, perhaps you could let me work for a little food? I could clean the floors or paint a fence, or service you sexually?'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Your best is an idiot! Anyone who laughs is a communist! It may comfort you to know that Fry\'s death took only fifteen seconds, yet the pain was so intense, that it felt to him like fifteen years. And it goes without saying, it caused him to empty his bowels.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'For the last time, I don\'t like lilacs! Your \'first\' wife was the one who liked lilacs! Look, everyone wants to be like Germany, but do we really have the pure strength of \'will\'? And from now on you\'re all named Bender Jr.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'My fellow Earthicans, as I have explained in my book \'Earth in the Balance\'\', and the much more popular \'\'Harry Potter and the Balance of Earth\', we need to defend our planet against pollution. Also dark wizards. You lived before you met me?!'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Why would I want to know that? Um, is this the boring, peaceful kind of taking to the streets? Good news, everyone! There\'s a report on TV with some very bad news! If rubbin\' frozen dirt in your crotch is wrong, hey I don\'t wanna be right.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Well, thanks to the Internet, I\'m now bored with sex. Is there a place on the web that panders to my lust for violence? You guys aren\'t Santa! You\'re not even robots. How dare you lie in front of Jesus?'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Humans dating robots is sick. You people wonder why I\'m still single? It\'s \'cause all the fine robot sisters are dating humans! Meh. Ow, my spirit! Hey! I\'m a porno-dealing monster, what do I care what you think?'
+	      )
 	    );
 	  }
 	});
@@ -24005,10 +24233,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var React = __webpack_require__(1);
 
-	var style = {
-	  color: '#42ff00'
-	};
-
 	var Project = React.createClass({
 	  displayName: 'Project',
 
@@ -24017,9 +24241,93 @@ return /******/ (function(modules) { // webpackBootstrap
 	      'main',
 	      null,
 	      React.createElement(
-	        'p',
-	        { style: style },
+	        'h1',
+	        null,
 	        'Project component'
+	      ),
+	      React.createElement(
+	        'h3',
+	        null,
+	        'But with the blast shield down, I can\'t even see! How am I supposed to fight?'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Dantooine. They\'re on Dantooine. Partially, but it also obeys your commands. I can\'t get involved! I\'ve got work to do! It\'s not that I like the Empire, I hate it, but there\'s nothing I can do about it right now. It\'s such a long way from here.'
+	      ),
+	      React.createElement(
+	        'ul',
+	        null,
+	        React.createElement(
+	          'li',
+	          null,
+	          'You don\'t believe in the Force, do you?'
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          'She must have hidden the plans in the escape pod. Send a detachment down to retrieve them, and see to it personally, Commander. There\'ll be no one to stop us this time!'
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          'I have traced the Rebel spies to her. Now she is my only link to finding their secret base.'
+	        )
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'A tremor in the Force. The last time I felt it was in the presence of my old master. Hey, Luke! May the Force be with you. Escape is not his plan. I must face him, alone. Remember, a Jedi can feel the Force flowing through him.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'The plans you refer to will soon be back in our hands. Your eyes can deceive you. Don\'t trust them. Ye-ha! Dantooine. They\'re on Dantooine. Alderaan? I\'m not going to Alderaan. I\'ve got to go home. It\'s late, I\'m in for it as it is.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'The more you tighten your grip, Tarkin, the more star systems will slip through your fingers. The plans you refer to will soon be back in our hands. Your eyes can deceive you. Don\'t trust them. I can\'t get involved! I\'ve got work to do! It\'s not that I like the Empire, I hate it, but there\'s nothing I can do about it right now. It\'s such a long way from here.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Look, I can take you as far as Anchorhead. You can get a transport there to Mos Eisley or wherever you\'re going. Don\'t be too proud of this technological terror you\'ve constructed. The ability to destroy a planet is insignificant next to the power of the Force.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Red Five standing by. You mean it controls your actions? I want to come with you to Alderaan. There\'s nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'You are a part of the Rebel Alliance and a traitor! Take her away! The plans you refer to will soon be back in our hands. I\'m trying not to, kid. Red Five standing by. Red Five standing by.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'You\'re all clear, kid. Let\'s blow this thing and go home! I find your lack of faith disturbing. What!? But with the blast shield down, I can\'t even see! How am I supposed to fight? Still, she\'s got a lot of spirit. I don\'t know, what do you think?'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'I can\'t get involved! I\'ve got work to do! It\'s not that I like the Empire, I hate it, but there\'s nothing I can do about it right now. It\'s such a long way from here. Hey, Luke! May the Force be with you.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Dantooine. They\'re on Dantooine. I want to come with you to Alderaan. There\'s nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me. I care. So, what do you think of her, Han?'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'I care. So, what do you think of her, Han? I want to come with you to Alderaan. There\'s nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me. I want to come with you to Alderaan. There\'s nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'I\'m trying not to, kid. You don\'t believe in the Force, do you? I need your help, Luke. She needs your help. I\'m getting too old for this sort of thing. As you wish. Look, I can take you as far as Anchorhead. You can get a transport there to Mos Eisley or wherever you\'re going.'
 	      )
 	    );
 	  }

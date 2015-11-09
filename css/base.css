@@ -3,46 +3,80 @@
 :root {
   --font-family: 'Avenir Next', 'Hevletica Neue', sans-serif;
 }
-
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
 body {
-  background-color: #292929;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  background-color: #2d2d2d;
   font-family: 'Avenir Next', 'Hevletica Neue', sans-serif;
   color: #c1c1c1;
 }
-
-ul li {
-  display: inline;
-  list-style-type: none;
-  padding-right: 20px;
+.nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
-a {
-  color:#00b6f9;
+.nav li {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
   }
+  @media screen and (min-width: 600px) {
+    .nav li {
+      display: inline-block;
+      width: 120px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.4em;
+    }
+  }
+.nav a {
+  text-decoration: none;
+  display: block;
+  color: #00b1fc;
+  transition: .3s background-color;
 
+  }
+.container {
+  margin: 0 auto;
+  padding-top: 64px;
+  max-width: 640px;
+  width: 94%;
+}
 .picK {
   display: inline;
   height: 75px;
   width: 75px;
   float: right;
 }
-.picMe{
-  display: inline;
+.picMe {
   height: 300px;
   width: auto;
   border-radius: 175px;
 }
 
-.indexContent {
-}
 
-.hContent {
-  display: inline;
-  float: right;
-}
 .footer {
-  margin-top: 350px;
-  height: auto;
-  width: 100%;
+  position: absolute;
+  right: 0;
   bottom: 0;
+  left: 0;
+  background-color: #2a2a2a;
+  width: 100%;
+  height: auto;
   text-align: right;
 }

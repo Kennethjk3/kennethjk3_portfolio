@@ -20,15 +20,18 @@ var Root = React.createClass({
           <style dangerouslySetInnerHTML={{ __html: css }} />
         </head>
         <body>
-          <Header />
-          <RouteHandler {...this.props} />
-          <script
-            id='initial-props'
-            type='application/json'
-            dangerouslySetInnerHTML={initialProps} />
-          <script src='bundle.js' />
-          <Footer />
+            <Header />
 
+          <div className="container">
+            <RouteHandler {...this.props} />
+            <script
+              id='initial-props'
+              type='application/json'
+              dangerouslySetInnerHTML={initialProps} />
+            <script src='bundle.js' />
+          </div>
+          
+            <Footer />
         </body>
       </html>
     )
