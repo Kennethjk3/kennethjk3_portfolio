@@ -3,6 +3,7 @@ module.exports = {
   routes: [
     '/',
     '/about',
-    '/project'
+    '/project',
+    '/contact'
   ]
 }

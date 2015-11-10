@@ -6,6 +6,8 @@ var Root = require('./components/Root.jsx')
 var Index = require('./components/Index.jsx')
 var About = require('./components/About.jsx')
 var Project = require('./components/Project.jsx')
+var Contact = require('./components/Contact.jsx')
+
 
 
 var Routes = (
@@ -13,6 +15,7 @@ var Routes = (
     <DefaultRoute handler={Index} />
     <Route path='/about' handler={About} />
     <Route path='/project' handler={Project} />
+    <Route path='/contact' handler={Contact} />
   </Route>
 )
 
