@@ -1,6 +1,7 @@
 var React = require('react')
 var Router = require('react-router')
 var Link = Router.Link
+require('../style/header.scss');
 
 
 
