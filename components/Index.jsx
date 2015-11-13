@@ -4,6 +4,7 @@ var Index = React.createClass({
   render: function () {
     return (
       <main className="indexContent">
+        <span className="UC"> Under Construction!</span>
         <div>
           <img className="picMe" src="./style/img/headshot.jpg"></img>
         </div>
