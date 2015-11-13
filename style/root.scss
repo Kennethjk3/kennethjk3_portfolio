@@ -1,3 +1,16 @@
+@import
+  'header.scss';
+
+
+html {
+  height: 100%;
+}
 body {
-  background-color: #aeff00;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  background-color: #292929;
+  font-family: 'Avenir Next', 'Hevletica Neue', sans-serif;
+  color: #c1c1c1;
 }
