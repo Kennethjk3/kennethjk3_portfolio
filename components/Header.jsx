@@ -7,18 +7,18 @@ var Header = React.createClass({
     return (
       <header>
         <div className="nav">
-          <img className="picK" src="../css/img/K.png"></img>
-          <ul>
-            <li>
+          <img className="picK" src="../style/img/K.png"></img>
+          <ul className="nav-ul">
+            <li className="nav-li">
               <Link to='/'>Home</Link>
             </li>
-            <li>
+            <li className="nav-li">
               <Link to='/about'>About</Link>
             </li>
-            <li>
+            <li className="nav-li">
               <Link to='/project'>Projects</Link>
             </li>
-            <li>
+            <li className="nav-li">
               <Link to='/contact'>Contact Me</Link>
             </li>
           </ul>

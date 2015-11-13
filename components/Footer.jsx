@@ -10,8 +10,8 @@ var Footer = React.createClass({
       <footer>
         <div className="footer">
           <hr />
-          <ul>
-            <li>
+          <ul className="footer-ul">
+            <li className="footer-li">
             This site is designed using <a href="https://facebook.github.io/react/index.html">React</a>!
             </li>
           </ul>
