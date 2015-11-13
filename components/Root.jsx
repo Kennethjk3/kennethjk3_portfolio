@@ -4,7 +4,8 @@ var RouteHandler = Router.RouteHandler
 var Header = require('../components/Header.jsx')
 var Footer = require('../components/Footer.jsx')
 
-var css = require('../css/base.css')
+// var css = require('../css/base.css')
+var css = require('../style/root.scss');
 
 
 var Root = React.createClass({
@@ -17,7 +18,7 @@ var Root = React.createClass({
       <html>
         <head>
           <title>{this.props.title}</title>
-          <style dangerouslySetInnerHTML={{ __html: css }} />
+          // <style dangerouslySetInnerHTML={{ __html: css }} />
         </head>
         <body>
             <Header />
@@ -30,7 +31,7 @@ var Root = React.createClass({
               dangerouslySetInnerHTML={initialProps} />
             <script src='bundle.js' />
           </div>
-          
+
             <Footer />
         </body>
       </html>

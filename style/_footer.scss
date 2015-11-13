@@ -1,0 +1,20 @@
+
+
+.footer-ul {
+  width          : 100%;
+  list-style-type: none;
+  display        : inline-block;
+  text-align     : right;
+  float          : right;
+}
+.footer-li {
+  display: inline;
+  & a {
+    color: #00b1fc;
+    text-decoration: none;
+    &:hover {
+      color: inherit;
+      font-size: 25px;
+    }
+  }
+}

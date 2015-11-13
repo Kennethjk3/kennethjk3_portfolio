@@ -5,7 +5,7 @@ var Index = React.createClass({
     return (
       <main className="indexContent">
         <div>
-          <img className="picMe" src="./css/img/Me.jpg"></img>
+          <img className="picMe" src="./style/img/headshot.jpg"></img>
         </div>
         <div>
           <h3>Hello!</h3>
