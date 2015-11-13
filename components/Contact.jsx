@@ -14,8 +14,8 @@ var Contact = React.createClass({
           <a href='https://github.com/Kennethjk3'>
             <img className='social-img' title="Github" alt="Github" src="./style/img/icons/github.svg" />
           </a>
-          <a href='https://www.gmail.com/KenJamin1989'>
-            <img className='social-img' title="Gmail" alt="Gmail" src="./style/img/icons/googleplus-square.svg" />
+          <a href='mailto:kennethjk3@gmail.com'>
+            <img className='social-img' title="Gmail" alt="Gmail" src="./style/img/icons/mail.svg" />
           </a>
         </div>
       </main>

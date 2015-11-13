@@ -24387,8 +24387,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        ),
 	        React.createElement(
 	          'a',
-	          { href: 'https://www.gmail.com/KenJamin1989' },
-	          React.createElement('img', { className: 'social-img', title: 'Gmail', alt: 'Gmail', src: './style/img/icons/googleplus-square.svg' })
+	          { href: 'mailto:kennethjk3@gmail.com' },
+	          React.createElement('img', { className: 'social-img', title: 'Gmail', alt: 'Gmail', src: './style/img/icons/mail.svg' })
 	        )
 	      )
 	    );
