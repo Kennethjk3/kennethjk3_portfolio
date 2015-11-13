@@ -7,8 +7,8 @@ var Header = React.createClass({
     return (
       <header>
         <div className="nav">
+          <img className="picK" src="../css/img/K.png"></img>
           <ul>
-            <img className="picK" src="../css/img/K.png"></img>
             <li>
               <Link to='/'>Home</Link>
             </li>
