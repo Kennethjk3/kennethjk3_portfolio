@@ -24,7 +24,6 @@ var Header = React.createClass({
           </ul>
           <hr/>
         </div>
-
       </header>
 
     )

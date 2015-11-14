@@ -23728,7 +23728,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	var Header = __webpack_require__(201);
 	var Footer = __webpack_require__(202);
 
-	// var css = require('../css/base.css')
 	var css = __webpack_require__(203);
 
 	var Root = React.createClass({
@@ -23750,7 +23749,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	          null,
 	          this.props.title
 	        ),
-	        '// ',
 	        React.createElement('style', { dangerouslySetInnerHTML: { __html: css } })
 	      ),
 	      React.createElement(
@@ -23759,7 +23757,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        React.createElement(Header, null),
 	        React.createElement(
 	          'div',
-	          { className: 'container' },
+	          { className: 'content-main' },
 	          React.createElement(RouteHandler, this.props),
 	          React.createElement('script', {
 	            id: 'initial-props',
@@ -23869,19 +23867,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	        { className: 'footer' },
 	        React.createElement('hr', null),
 	        React.createElement(
-	          'ul',
-	          { className: 'footer-ul' },
+	          'p',
+	          null,
+	          'This site is designed using ',
 	          React.createElement(
-	            'li',
-	            { className: 'footer-li' },
-	            'This site is designed using ',
-	            React.createElement(
-	              'a',
-	              { href: 'https://facebook.github.io/react/index.html' },
-	              'React'
-	            ),
-	            '!'
-	          )
+	            'a',
+	            { href: 'https://facebook.github.io/react/index.html' },
+	            'React'
+	          ),
+	          '!'
 	        )
 	      )
 	    );
@@ -23899,7 +23893,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, ".nav-ul {\n  width: 100%;\n  list-style-type: none;\n  display: inline-block;\n  text-align: center; }\n\n.nav-li {\n  position: relative;\n  display: inline;\n  margin-right: 50px;\n  font-family: 'Oswald', sans-serif;\n  font-size: 1.2em; }\n  .nav-li a {\n    text-decoration: none;\n    border-radius: 20px;\n    color: #00b1fc; }\n    .nav-li a:hover {\n      background-color: #3a751d;\n      font-size: 30px; }\n\n.picK {\n  position: absolute;\n  display: inline;\n  height: 75px;\n  width: 75px; }\n\n.footer-ul {\n  width: 100%;\n  list-style-type: none;\n  display: inline-block;\n  text-align: right;\n  float: right; }\n\n.footer-li {\n  display: inline; }\n  .footer-li a {\n    color: #00b1fc;\n    text-decoration: none; }\n    .footer-li a:hover {\n      color: inherit;\n      font-size: 25px; }\n\n.social {\n  display: inline;\n  margin-left: 20px; }\n\n.social-img {\n  width: 100px;\n  height: 100px; }\n\n.picMe {\n  height: 300px;\n  width: auto;\n  border-radius: 175px; }\n\n.UC {\n  float: right;\n  opacity: .5;\n  font-size: 25px;\n  background-color: #FF6600;\n  color: #FFCC00; }\n\nbody {\n  height: 100%;\n  font-family: 'Avenir Next', 'Hevletica Neue', sans-serif;\n  position: relative;\n  margin: 0;\n  min-height: 100%;\n  background-color: #292929;\n  font-family: 'Avenir Next', 'Hevletica Neue', sans-serif;\n  color: #c1c1c1; }\n\n.container {\n  margin: 0 auto;\n  padding-top: 64px;\n  max-width: 640px;\n  width: 94%; }\n", ""]);
+	exports.push([module.id, ".nav-ul {\n  width: 100%;\n  list-style-type: none;\n  display: inline-block;\n  text-align: center; }\n\n.nav-li {\n  position: relative;\n  display: inline;\n  margin-right: 50px;\n  font-family: 'Oswald', sans-serif;\n  font-size: 1.2em; }\n  .nav-li a {\n    text-decoration: none;\n    border-radius: 20px;\n    color: #00b1fc; }\n    .nav-li a:hover {\n      background-color: #3a751d;\n      font-size: 30px; }\n\n.picK {\n  position: absolute;\n  display: inline-block;\n  height: 75px;\n  width: 75px; }\n\n.footer {\n  background-color: #292929;\n  width: 100%;\n  list-style-type: none;\n  text-align: right;\n  position: absolute;\n  float: bottom;\n  height: 60px; }\n  .footer a {\n    color: #00b1fc;\n    text-decoration: none; }\n    .footer a:hover {\n      color: inherit;\n      font-size: 25px; }\n\n.social {\n  display: inline;\n  margin-left: 20px; }\n\n.social-img {\n  width: 100px;\n  height: 100px; }\n\n.columnleft,\n.columnright {\n  position: absolute;\n  top: 20%;\n  margin: 20px; }\n\n.columnleft {\n  right: 50%; }\n\n.columnright {\n  top: 40%;\n  height: 500px;\n  width: 400px;\n  left: 50%;\n  text-align: right; }\n\n.picMe {\n  height: 500px;\n  width: 500px;\n  border-radius: 250px;\n  opacity: 0.7;\n  -moz-box-shadow: 0 0 75px rgba(0, 0, 0, 0.8);\n  -webkit-box-shadow: 0 0 75px rgba(0, 0, 0, 0.8);\n  box-shadow: 0 0 75px rgba(0, 0, 0, 0.8); }\n\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  background-color: #292929;\n  font-family: 'Avenir Next', 'Hevletica Neue', sans-serif;\n  color: #c1c1c1; }\n\n.content-main {\n  min-height: 100%; }\n", ""]);
 
 	// exports
 
@@ -23974,117 +23968,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	  render: function render() {
 	    return React.createElement(
 	      "main",
-	      { className: "indexContent" },
-	      React.createElement(
-	        "span",
-	        { className: "UC" },
-	        " Under Construction!"
-	      ),
+	      null,
 	      React.createElement(
 	        "div",
-	        null,
-	        React.createElement("img", { className: "picMe", src: "./style/img/headshot.jpg" })
-	      ),
-	      React.createElement(
-	        "div",
-	        null,
+	        { className: "container" },
 	        React.createElement(
-	          "h3",
-	          null,
-	          "Hello!"
+	          "div",
+	          { className: "columnleft" },
+	          React.createElement("img", { className: "picMe", src: "./style/img/headshot.jpg" })
 	        ),
 	        React.createElement(
-	          "p",
-	          null,
-	          "I'm Kenneth Kier and this site is all about me!"
-	        ),
-	        React.createElement(
-	          "h1",
-	          null,
-	          "A newt?"
-	        ),
-	        React.createElement(
-	          "p",
-	          null,
-	          "Why do you think that she is a witch? I have to push the pram a lot. Well, how'd you become king, then? But you are dressed as one…"
-	        ),
-	        React.createElement(
-	          "p",
-	          null,
-	          "It's only a model. Bloody Peasant! Shut up! Well, how'd you become king, then?"
-	        ),
-	        React.createElement(
-	          "h2",
-	          null,
-	          "Ni! Ni! Ni! Ni!"
-	        ),
-	        React.createElement(
-	          "p",
-	          null,
-	          "Found them? In Mercia?! The coconut's tropical! He hasn't got shit all over him. Bloody Peasant! Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed!"
-	        ),
-	        React.createElement(
-	          "ol",
-	          null,
+	          "div",
+	          { className: "columnright" },
 	          React.createElement(
-	            "li",
+	            "h1",
 	            null,
-	            "Did you dress her up like this?"
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
-	            "Burn her anyway!"
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
-	            "Well, we did do the nose."
+	            "Hello! ",
+	            React.createElement("br", null),
+	            "I'm Kenneth Kier "
 	          )
-	        ),
-	        React.createElement(
-	          "h3",
-	          null,
-	          "You don't frighten us, English pig-dogs! Go and boil your bottoms, sons of a silly person! I blow my nose at you, so-called Ah-thoor Keeng, you and all your silly English K-n-n-n-n-n-n-n-niggits!"
-	        ),
-	        React.createElement(
-	          "p",
-	          null,
-	          "You can't expect to wield supreme power just 'cause some watery tart threw a sword at you! What a strange person. And this isn't my nose. This is a false one. He hasn't got shit all over him. Well, what do you want?"
-	        ),
-	        React.createElement(
-	          "ul",
-	          null,
-	          React.createElement(
-	            "li",
-	            null,
-	            "A newt?"
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
-	            "What do you mean?"
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
-	            "The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. That is why I am your king."
-	          )
-	        ),
-	        React.createElement(
-	          "p",
-	          null,
-	          "Well, I didn't vote for you. Who's that then? A newt? Shh! Knights, I bid you welcome to your new home. Let us ride to Camelot!"
-	        ),
-	        React.createElement(
-	          "p",
-	          null,
-	          "The nose? You don't frighten us, English pig-dogs! Go and boil your bottoms, sons of a silly person! I blow my nose at you, so-called Ah-thoor Keeng, you and all your silly English K-n-n-n-n-n-n-n-niggits!"
-	        ),
-	        React.createElement(
-	          "p",
-	          null,
-	          "Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods. A newt? Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods. You can't expect to wield supreme power just cause some watery tart threw a sword at you!"
 	        )
 	      )
 	    );
