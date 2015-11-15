@@ -3,6 +3,7 @@
   list-style-type: none;
   display        : inline-block;
   text-align     : center;
+  line-height    : 30px;
 }
 .nav-li {
   position    : relative;
@@ -16,7 +17,7 @@
     color          : #00b1fc;
     &:hover {
       background-color: #3a751d;
-      font-size: 30px;
+      font-size       : 30px;
     }
   }
 }

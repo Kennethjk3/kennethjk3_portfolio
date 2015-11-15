@@ -23796,7 +23796,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      React.createElement(
 	        'div',
 	        { className: 'nav' },
-	        React.createElement('img', { className: 'picK', src: '../style/img/K.png' }),
+	        React.createElement('img', { className: 'picK', src: '../style/img/K2.png' }),
 	        React.createElement(
 	          'ul',
 	          { className: 'nav-ul' },
@@ -23893,7 +23893,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, ".nav-ul {\n  width: 100%;\n  list-style-type: none;\n  display: inline-block;\n  text-align: center; }\n\n.nav-li {\n  position: relative;\n  display: inline;\n  margin-right: 50px;\n  font-family: 'Oswald', sans-serif;\n  font-size: 1.2em; }\n  .nav-li a {\n    text-decoration: none;\n    border-radius: 20px;\n    color: #00b1fc; }\n    .nav-li a:hover {\n      background-color: #3a751d;\n      font-size: 30px; }\n\n.picK {\n  position: absolute;\n  display: inline-block;\n  height: 75px;\n  width: 75px; }\n\n.footer {\n  background-color: #292929;\n  width: 100%;\n  list-style-type: none;\n  text-align: right;\n  position: absolute;\n  float: bottom;\n  height: 60px; }\n  .footer a {\n    color: #00b1fc;\n    text-decoration: none; }\n    .footer a:hover {\n      color: inherit;\n      font-size: 25px; }\n\n.social {\n  display: inline;\n  margin-left: 20px; }\n\n.social-img {\n  width: 100px;\n  height: 100px; }\n\n.columnleft,\n.columnright {\n  position: absolute;\n  top: 20%;\n  margin: 20px; }\n\n.columnleft {\n  right: 50%; }\n\n.columnright {\n  top: 40%;\n  height: 500px;\n  width: 400px;\n  left: 50%;\n  text-align: right; }\n\n.picMe {\n  height: 500px;\n  width: 500px;\n  border-radius: 250px;\n  opacity: 0.7;\n  -moz-box-shadow: 0 0 75px rgba(0, 0, 0, 0.8);\n  -webkit-box-shadow: 0 0 75px rgba(0, 0, 0, 0.8);\n  box-shadow: 0 0 75px rgba(0, 0, 0, 0.8); }\n\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  background-color: #292929;\n  font-family: 'Avenir Next', 'Hevletica Neue', sans-serif;\n  color: #c1c1c1; }\n\n.content-main {\n  min-height: 100%; }\n", ""]);
+	exports.push([module.id, ".nav-ul {\n  width: 100%;\n  list-style-type: none;\n  display: inline-block;\n  text-align: center;\n  line-height: 30px; }\n\n.nav-li {\n  position: relative;\n  display: inline;\n  margin-right: 50px;\n  font-family: 'Oswald', sans-serif;\n  font-size: 1.2em; }\n  .nav-li a {\n    text-decoration: none;\n    border-radius: 20px;\n    color: #00b1fc; }\n    .nav-li a:hover {\n      background-color: #3a751d;\n      font-size: 30px; }\n\n.picK {\n  position: absolute;\n  display: inline-block;\n  height: 75px;\n  width: 75px; }\n\n.footer {\n  background-color: #292929;\n  width: 100%;\n  list-style-type: none;\n  text-align: right;\n  position: absolute;\n  float: bottom;\n  height: 60px; }\n  .footer a {\n    color: #00b1fc;\n    text-decoration: none; }\n    .footer a:hover {\n      color: inherit;\n      font-size: 25px; }\n\n.contact {\n  text-align: center;\n  margin-top: 100px; }\n  .contact .link-icon {\n    margin: 20px;\n    height: 300px;\n    width: 300px; }\n\n.columnleft,\n.columnright {\n  position: absolute;\n  top: 20%;\n  margin: 20px; }\n\n.columnleft {\n  right: 50%; }\n\n.columnright {\n  top: 40%;\n  height: 500px;\n  width: 400px;\n  left: 50%;\n  text-align: right; }\n\n.picMe {\n  height: 500px;\n  width: 500px;\n  border-radius: 250px;\n  opacity: .7;\n  -moz-box-shadow: 0 0 75px rgba(0, 0, 0, 0.8);\n  -webkit-box-shadow: 0 0 75px rgba(0, 0, 0, 0.8);\n  box-shadow: 0 0 75px rgba(0, 0, 0, 0.8); }\n\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  background-image: url(/style/img/bg.jpg);\n  background-color: #292929;\n  font-family: 'Avenir Next', 'Hevletica Neue', sans-serif;\n  color: #c1c1c1; }\n\n.content-main {\n  min-height: 100%; }\n", ""]);
 
 	// exports
 
@@ -24276,26 +24276,34 @@ return /******/ (function(modules) { // webpackBootstrap
 	      null,
 	      React.createElement(
 	        'div',
-	        { className: 'social' },
+	        { className: 'contact' },
 	        React.createElement(
-	          'a',
-	          { href: 'https://www.facebook.com/KenJamin1989' },
-	          React.createElement('img', { className: 'social-img', title: 'Facebook', alt: 'Facebook', src: './style/img/icons/facebook-square.svg' })
+	          'div',
+	          null,
+	          React.createElement(
+	            'a',
+	            { href: 'https://github.com/Kennethjk3' },
+	            React.createElement('img', { className: 'link-icon', title: 'Github', alt: 'Github', src: './style/img/icons/github.svg' })
+	          ),
+	          React.createElement(
+	            'a',
+	            { href: 'https://www.linkedin.com/in/kenneth-kier-09260282' },
+	            React.createElement('img', { className: 'link-icon', title: 'LinkedIn', alt: 'LinkedIn', src: './style/img/icons/linkedin.svg' })
+	          )
 	        ),
 	        React.createElement(
-	          'a',
-	          { href: 'https://www.linkedin.com/in/kenneth-kier-09260282' },
-	          React.createElement('img', { className: 'social-img', title: 'LinkedIn', alt: 'LinkedIn', src: './style/img/icons/linkedin.svg' })
-	        ),
-	        React.createElement(
-	          'a',
-	          { href: 'https://github.com/Kennethjk3' },
-	          React.createElement('img', { className: 'social-img', title: 'Github', alt: 'Github', src: './style/img/icons/github.svg' })
-	        ),
-	        React.createElement(
-	          'a',
-	          { href: 'mailto:kennethjk3@gmail.com' },
-	          React.createElement('img', { className: 'social-img', title: 'Gmail', alt: 'Gmail', src: './style/img/icons/mail.svg' })
+	          'div',
+	          null,
+	          React.createElement(
+	            'a',
+	            { href: 'https://www.facebook.com/KenJamin1989' },
+	            React.createElement('img', { className: 'link-icon', title: 'Facebook', alt: 'Facebook', src: './style/img/icons/facebook-square.svg' })
+	          ),
+	          React.createElement(
+	            'a',
+	            { href: 'mailto:kennethjk3@gmail.com' },
+	            React.createElement('img', { className: 'link-icon', title: 'Gmail', alt: 'Gmail', src: './style/img/icons/mail.svg' })
+	          )
 	        )
 	      )
 	    );
