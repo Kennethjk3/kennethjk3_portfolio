@@ -1,4 +1,4 @@
-@import 'header.scss', 'footer.scss', 'contact.scss', 'index.scss';
+@import 'about.scss', 'header.scss', 'footer.scss', 'contact.scss', 'home.scss';
 html,
 body {
   margin          : 0;
@@ -11,6 +11,7 @@ body {
   background-image: url(/style/img/bg.jpg);
   background-repeat: no-repeat;
   background-color: #292929;
+
 }
 .content-main {
   margin: 20px 50px 0 75px;
