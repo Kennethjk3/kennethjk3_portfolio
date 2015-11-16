@@ -19,6 +19,9 @@ var Header = React.createClass({
               <Link to='/project'>Projects</Link>
             </li>
             <li className="nav-li">
+              <Link to='/resume'>Resume</Link>
+            </li>
+            <li className="nav-li">
               <Link to='/contact'>Contact Me</Link>
             </li>
           </ul>

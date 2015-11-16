@@ -4,6 +4,7 @@ module.exports = {
     '/',
     '/about',
     '/project',
+    '/resume',
     '/contact'
   ]
 }

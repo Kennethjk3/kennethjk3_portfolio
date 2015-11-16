@@ -60,13 +60,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	if (typeof document !== 'undefined') {
 	  var initialProps = JSON.parse(document.getElementById('initial-props').innerHTML)
-	  Router.run(Routes, Router.HistoryLocation, function (Handler) {
+	  Router.run(Routes, Router.HistoryLocation, function(Handler) {
 	    React.render(React.createElement(Handler, initialProps), document)
 	  })
 	}
 
 	module.exports = function render(locals, callback) {
-	  Router.run(Routes, locals.path, function (Handler) {
+	  Router.run(Routes, locals.path, function(Handler) {
 	    var html = React.renderToString(React.createElement(Handler, locals))
 	    callback(null, '<!DOCTYPE html>' + html)
 	  })
@@ -23700,17 +23700,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	var Route = Router.Route;
 	var DefaultRoute = Router.DefaultRoute;
 	var Root = __webpack_require__(200);
-	var Index = __webpack_require__(205);
+	var Home = __webpack_require__(205);
 	var About = __webpack_require__(206);
 	var Project = __webpack_require__(207);
-	var Contact = __webpack_require__(208);
+	var Resume = __webpack_require__(208);
+	var Contact = __webpack_require__(209);
 
 	var Routes = React.createElement(
 	  Route,
 	  { handler: Root, path: '/' },
-	  React.createElement(DefaultRoute, { handler: Index }),
+	  React.createElement(DefaultRoute, { handler: Home }),
 	  React.createElement(Route, { path: '/about', handler: About }),
 	  React.createElement(Route, { path: '/project', handler: Project }),
+	  React.createElement(Route, { path: '/resume', handler: Resume }),
 	  React.createElement(Route, { path: '/contact', handler: Contact })
 	);
 
@@ -23832,6 +23834,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	            { className: 'nav-li' },
 	            React.createElement(
 	              Link,
+	              { to: '/resume' },
+	              'Resume'
+	            )
+	          ),
+	          React.createElement(
+	            'li',
+	            { className: 'nav-li' },
+	            React.createElement(
+	              Link,
 	              { to: '/contact' },
 	              'Contact Me'
 	            )
@@ -23893,7 +23904,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, ".nav-ul {\n  width: 100%;\n  list-style-type: none;\n  display: inline-block;\n  text-align: center;\n  line-height: 30px; }\n\n.nav-li {\n  position: relative;\n  display: inline;\n  margin-right: 50px;\n  font-family: 'Oswald', sans-serif;\n  font-size: 1.2em; }\n  .nav-li a {\n    text-decoration: none;\n    border-radius: 20px;\n    color: #00b1fc; }\n    .nav-li a:hover {\n      background-color: #3a751d;\n      font-size: 30px; }\n\n.picK {\n  position: absolute;\n  display: inline-block;\n  height: 75px;\n  width: 75px; }\n\n.footer {\n  background-color: #292929;\n  width: 100%;\n  list-style-type: none;\n  text-align: right;\n  position: absolute;\n  float: bottom;\n  height: 60px; }\n  .footer a {\n    color: #00b1fc;\n    text-decoration: none; }\n    .footer a:hover {\n      color: inherit;\n      font-size: 25px; }\n\n.contact {\n  text-align: center;\n  margin-top: 100px; }\n  .contact .link-icon {\n    margin: 20px;\n    height: 300px;\n    width: 300px; }\n\n.columnleft,\n.columnright {\n  position: absolute;\n  top: 20%;\n  margin: 20px; }\n\n.columnleft {\n  right: 50%; }\n\n.columnright {\n  top: 40%;\n  height: 500px;\n  width: 400px;\n  left: 50%;\n  text-align: right; }\n\n.picMe {\n  height: 500px;\n  width: 500px;\n  border-radius: 250px;\n  opacity: .7;\n  -moz-box-shadow: 0 0 75px rgba(0, 0, 0, 0.8);\n  -webkit-box-shadow: 0 0 75px rgba(0, 0, 0, 0.8);\n  box-shadow: 0 0 75px rgba(0, 0, 0, 0.8); }\n\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  background-image: url(/style/img/bg.jpg);\n  background-color: #292929;\n  font-family: 'Avenir Next', 'Hevletica Neue', sans-serif;\n  color: #c1c1c1; }\n\n.content-main {\n  min-height: 100%; }\n", ""]);
+	exports.push([module.id, ".nav {\n  margin-top: .1em; }\n\n.nav-ul {\n  width: 100%;\n  list-style-type: none;\n  display: inline-block;\n  text-align: center;\n  line-height: 30px; }\n\n.nav-li {\n  position: relative;\n  display: inline;\n  margin-right: 50px;\n  font-family: 'Oswald', sans-serif;\n  font-size: 1.2em; }\n  .nav-li a {\n    text-decoration: none;\n    border-radius: 20px;\n    color: #00b1fc; }\n    .nav-li a:hover {\n      background-color: #3a751d;\n      font-size: 30px; }\n\n.picK {\n  position: absolute;\n  display: inline-block;\n  height: 75px;\n  width: 75px; }\n\n.footer {\n  width: 100%;\n  list-style-type: none;\n  text-align: right;\n  position: absolute;\n  float: bottom;\n  height: 60px; }\n  .footer a {\n    color: #00b1fc;\n    text-decoration: none; }\n    .footer a:hover {\n      color: inherit;\n      font-size: 25px; }\n\n.contact {\n  text-align: center; }\n  .contact .link-icon {\n    margin: 20px;\n    height: 300px;\n    width: 300px; }\n\n.columnleft,\n.columnright {\n  position: absolute;\n  top: 20%;\n  margin: 20px; }\n\n.columnleft {\n  right: 50%; }\n\n.columnright {\n  top: 40%;\n  height: 500px;\n  width: 400px;\n  left: 50%;\n  text-align: right; }\n\n.picMe {\n  height: 500px;\n  width: 500px;\n  border-radius: 250px;\n  opacity: .7;\n  -moz-box-shadow: 0 0 75px rgba(0, 0, 0, 0.8);\n  -webkit-box-shadow: 0 0 75px rgba(0, 0, 0, 0.8);\n  box-shadow: 0 0 75px rgba(0, 0, 0, 0.8); }\n\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n  height: 90%;\n  font-family: 'Avenir Next', 'Hevletica Neue', sans-serif;\n  color: #c1c1c1; }\n\nbody {\n  background-image: url(/style/img/bg.jpg);\n  background-repeat: no-repeat;\n  background-color: #292929; }\n\n.content-main {\n  margin: 20px 50px 0 75px;\n  overflow: scroll;\n  height: 100%;\n  min-height: 100%; }\n", ""]);
 
 	// exports
 
@@ -23962,8 +23973,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var React = __webpack_require__(1);
 
-	var Index = React.createClass({
-	  displayName: "Index",
+	var Home = React.createClass({
+	  displayName: "Home",
 
 	  render: function render() {
 	    return React.createElement(
@@ -23993,7 +24004,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	});
 
-	module.exports = Index;
+	module.exports = Home;
 
 /***/ },
 /* 206 */
@@ -24261,6 +24272,160 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 208 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var Resume = React.createClass({
+	  displayName: 'Resume',
+
+	  render: function render() {
+	    return React.createElement(
+	      'main',
+	      null,
+	      React.createElement(
+	        'h1',
+	        null,
+	        'Resume component'
+	      ),
+	      React.createElement(
+	        'h1',
+	        null,
+	        'Hey, whatcha watching?'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Oh God, what have I done? Perhaps, but perhaps your civilization is merely the sewer of an even greater society above you! Anyhoo, your net-suits will allow you to experience Fry\'s worm infested bowels as if you were actually wriggling through them.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Soon enough. Yes, if you make it look like an electrical fire. When you do things right, people won\'t be sure you\'ve done anything at all. You seem malnourished. Are you suffering from intestinal parasites?'
+	      ),
+	      React.createElement(
+	        'h2',
+	        null,
+	        'Yep, I remember. They came in last at the Olympics, then retired to promote alcoholic beverages!'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Quite possible. We live long and are celebrated poopers. You don\'t know how to do any of those. Throw her in the brig. Isn\'t it true that you have been paid for your testimony? Noooooo!'
+	      ),
+	      React.createElement(
+	        'ol',
+	        null,
+	        React.createElement(
+	          'li',
+	          null,
+	          'Hey, what kinda party is this? There\'s no booze and only one hooker.'
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          'I don\'t know what you did, Fry, but once again, you screwed up! Now all the planets are gonna start cracking wise about our mamas.'
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          'Oh yeah, good luck with that.'
+	        )
+	      ),
+	      React.createElement(
+	        'h3',
+	        null,
+	        'Calculon is gonna kill us and it\'s all everybody else\'s fault!'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'I\'m a thing. Oh, I think we should just stay friends. Good man. Nixon\'s pro-war and pro-family. Kif might!'
+	      ),
+	      React.createElement(
+	        'ul',
+	        null,
+	        React.createElement(
+	          'li',
+	          null,
+	          'You\'re going back for the Countess, aren\'t you?'
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          'Large bet on myself in round one.'
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          'I feel like I was mauled by Jesus.'
+	        )
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'That\'s right, baby. I ain\'t your loverboy Flexo, the guy you love so much. You even love anyone pretending to be him! Bender, you risked your life to save me! I decline the title of Iron Cook and accept the lesser title of Zinc Saucier, which I just made up. Uhh… also, comes with double prize money.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar. It\'s a T. It goes "tuh". Ummm…to eBay? There, now he\'s trapped in a book I wrote: a crummy world of plot holes and spelling errors!'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'I had more, but you go ahead. Ah, computer dating. It\'s like pimping, but you rarely have to use the phrase "upside your head." Whoa a real live robot; or is that some kind of cheesy New Year\'s costume?'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Why not indeed! Whoa a real live robot; or is that some kind of cheesy New Year\'s costume? It\'s just like the story of the grasshopper and the octopus. All year long, the grasshopper kept burying acorns for winter, while the octopus mooched off his girlfriend and watched TV. But then the winter came, and the grasshopper died, and the octopus ate all his acorns. Also he got a race car. Is any of this getting through to you?'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'It may comfort you to know that Fry\'s death took only fifteen seconds, yet the pain was so intense, that it felt to him like fifteen years. And it goes without saying, it caused him to empty his bowels. I meant \'physically\'. Look, perhaps you could let me work for a little food? I could clean the floors or paint a fence, or service you sexually?'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Your best is an idiot! Anyone who laughs is a communist! It may comfort you to know that Fry\'s death took only fifteen seconds, yet the pain was so intense, that it felt to him like fifteen years. And it goes without saying, it caused him to empty his bowels.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'For the last time, I don\'t like lilacs! Your \'first\' wife was the one who liked lilacs! Look, everyone wants to be like Germany, but do we really have the pure strength of \'will\'? And from now on you\'re all named Bender Jr.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'My fellow Earthicans, as I have explained in my book \'Earth in the Balance\'\', and the much more popular \'\'Harry Potter and the Balance of Earth\', we need to defend our planet against pollution. Also dark wizards. You lived before you met me?!'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Why would I want to know that? Um, is this the boring, peaceful kind of taking to the streets? Good news, everyone! There\'s a report on TV with some very bad news! If rubbin\' frozen dirt in your crotch is wrong, hey I don\'t wanna be right.'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Well, thanks to the Internet, I\'m now bored with sex. Is there a place on the web that panders to my lust for violence? You guys aren\'t Santa! You\'re not even robots. How dare you lie in front of Jesus?'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'Humans dating robots is sick. You people wonder why I\'m still single? It\'s \'cause all the fine robot sisters are dating humans! Meh. Ow, my spirit! Hey! I\'m a porno-dealing monster, what do I care what you think?'
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Resume;
+
+/***/ },
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
