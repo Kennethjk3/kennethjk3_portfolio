@@ -16,12 +16,12 @@
   font-family : 'Oswald', sans-serif;
   font-size   : 1.2em;
   & a {
+    
     text-decoration: none;
     border-radius  : 20px;
     color          : #00b1fc;
     &:hover {
-      background-color: #3a751d;
-      font-size       : 30px;
+      font-size       : 40px;
     }
   }
 }
@@ -30,4 +30,5 @@
   display : inline-block;
   height  : 75px;
   width   : 75px;
+  opacity: .7;
 }
