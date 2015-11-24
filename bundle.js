@@ -23710,10 +23710,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Route,
 	  { handler: Root, path: '/' },
 	  React.createElement(DefaultRoute, { handler: Home }),
-	  React.createElement(Route, { path: '/build/about', handler: About }),
-	  React.createElement(Route, { path: '/build/project', handler: Project }),
-	  React.createElement(Route, { path: '/build/resume', handler: Resume }),
-	  React.createElement(Route, { path: '/build/contact', handler: Contact })
+	  React.createElement(Route, { path: '/about', handler: About }),
+	  React.createElement(Route, { path: '/project', handler: Project }),
+	  React.createElement(Route, { path: '/resume', handler: Resume }),
+	  React.createElement(Route, { path: '/contact', handler: Contact })
 	);
 
 	module.exports = Routes;
@@ -23736,6 +23736,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  displayName: 'Root',
 
 	  render: function render() {
+
 	    return React.createElement(
 	      'html',
 	      null,
@@ -23757,6 +23758,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	          'div',
 	          { className: 'content-main' },
 	          React.createElement(RouteHandler, this.props),
+	          React.createElement('script', {
+	            id: 'initial-props',
+	            type: 'application/json' }),
 	          React.createElement('script', { src: 'bundle.js' })
 	        ),
 	        React.createElement(Footer, null)

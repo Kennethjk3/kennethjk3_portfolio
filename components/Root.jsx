@@ -9,6 +9,7 @@ var css = require('../style/root.scss');
 
 var Root = React.createClass({
   render: function () {
+
     return (
       <html>
         <head>
@@ -19,7 +20,10 @@ var Root = React.createClass({
           <Header />
           <div className="content-main">
           <RouteHandler {...this.props} />
-          <script src="bundle.js"></script>
+            <script
+              id='initial-props'
+              type='application/json'/>
+            <script src='bundle.js' />
           </div>
           <Footer />
         </body>

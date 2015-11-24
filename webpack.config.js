@@ -4,10 +4,13 @@ var path = require("path");
 
 
 module.exports = {
-  entry: './entry.js',
+  entry: {
+    'main': './entry.js'
+  },
+
 
   output: {
-    path: path.resolve(__dirname + "/build"),
+    path: __dirname,
     filename: 'bundle.js',
     libraryTarget: 'umd'
   },
@@ -23,6 +26,6 @@ module.exports = {
   },
 
   plugins: [
-    new StaticSiteGeneratorPlugin('bundle.js', data.routes, data)
+    new StaticSiteGeneratorPlugin('main', data.routes, data)
   ]
 }
