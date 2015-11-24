@@ -14,10 +14,10 @@ var Contact = require('./components/Contact.jsx')
 var Routes = (
   <Route handler={Root} path='/'>
     <DefaultRoute handler={Home} />
-    <Route path='/about' handler={About} />
-    <Route path='/project' handler={Project} />
-    <Route path='/resume' handler={Resume} />
-    <Route path='/contact' handler={Contact} />
+    <Route path='/build/about' handler={About} />
+    <Route path='/build/project' handler={Project} />
+    <Route path='/build/resume' handler={Resume} />
+    <Route path='/build/contact' handler={Contact} />
   </Route>
 )
 
