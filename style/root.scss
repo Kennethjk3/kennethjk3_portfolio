@@ -1,21 +1,24 @@
-@import 'about.scss', 'header.scss', 'footer.scss', 'contact.scss', 'home.scss';
+@import 'resume.scss', 'about.scss', 'header.scss', 'footer.scss', 'contact.scss', 'home.scss';
 html,
 body {
-  margin          : 0;
-  padding         : 0;
-  height          : 90%;
-  font-family     : 'Avenir Next', 'Hevletica Neue', sans-serif;
-  color           : #c1c1c1;
+  margin     : 0;
+  padding    : 0;
+  height     : 100%;
+  width      : 100%;
+  font-family: 'Avenir Next', 'Hevletica Neue', sans-serif;
+  color      : #c1c1c1;
 }
 body {
-  background-image: url(/style/img/bg.jpg);
+  background-image : url(/style/img/bg.jpg);
   background-repeat: no-repeat;
-  background-color: #292929;
-
+  background-color : black;
 }
 .content-main {
-  margin: 20px 50px 0 75px;
-  overflow: scroll;
-  height: 100%;
+  margin    : 20px 50px 0 75px;
+  overflow  : scroll;
+  height    : 100%;
   min-height: 100%;
+}
+ ::-webkit-scrollbar {
+  display: none;
 }

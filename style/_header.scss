@@ -1,6 +1,5 @@
 .nav {
   margin-top: .1em;
-
 }
 .nav-ul {
   width          : 100%;
@@ -9,6 +8,7 @@
   text-align     : center;
   line-height    : 30px;
 }
+
 .nav-li {
   position    : relative;
   display     : inline;
@@ -16,7 +16,6 @@
   font-family : 'Oswald', sans-serif;
   font-size   : 1.2em;
   & a {
-    
     text-decoration: none;
     border-radius  : 20px;
     color          : #00b1fc;
@@ -25,6 +24,7 @@
     }
   }
 }
+
 .picK {
   position: absolute;
   display : inline-block;

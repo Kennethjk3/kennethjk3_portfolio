@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'My Static Site',
+  title: 'Kenneth Kier | Portfolio',
   routes: [
     '/',
     '/about',

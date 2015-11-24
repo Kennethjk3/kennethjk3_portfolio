@@ -9,10 +9,6 @@ var css = require('../style/root.scss');
 
 var Root = React.createClass({
   render: function () {
-    this.props.webpackStats = undefined
-    var initialProps = {
-      __html: safeStringify(this.props)
-    }
     return (
       <html>
         <head>
@@ -23,11 +19,8 @@ var Root = React.createClass({
           <Header />
           <div className="content-main">
           <RouteHandler {...this.props} />
-          <script
-            id='initial-props'
-            type='application/json'
-            dangerouslySetInnerHTML={initialProps} />
-          <script src='bundle.js' />
+          <script src="bundle.js"></script>
+
           </div>
           <Footer />
         </body>

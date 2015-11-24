@@ -12,7 +12,3 @@
   3. add route in data.js file
   4. in Routes.jsx add var {Page} and require
     -in var Route add path and hander
-
-- CSS/styling can be added by:
-  -creating a .css file and importing it to main .js file
-  -creating a .css file for each individual component and importing it the component's .jsx file
