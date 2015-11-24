@@ -5,7 +5,7 @@ var Home = React.createClass({
     return (
       <main>
         <div className="home-container">
-          <img className="picMe" src="./style/img/headshot.jpg"/>
+          <img className="picMe" src="../style/img/headshot.jpg"/>
           <p className="home-text">
             Hello!
             <br/>

@@ -23975,7 +23975,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      React.createElement(
 	        "div",
 	        { className: "home-container" },
-	        React.createElement("img", { className: "picMe", src: "./style/img/headshot.jpg" }),
+	        React.createElement("img", { className: "picMe", src: "../style/img/headshot.jpg" }),
 	        React.createElement(
 	          "p",
 	          { className: "home-text" },
@@ -24312,12 +24312,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	          React.createElement(
 	            'a',
 	            { href: 'https://github.com/Kennethjk3' },
-	            React.createElement('img', { className: 'link-icon', title: 'Github', alt: 'Github', src: './style/img/icons/github.svg' })
+	            React.createElement('img', { className: 'link-icon', title: 'Github', alt: 'Github', src: '../style/img/icons/github.svg' })
 	          ),
 	          React.createElement(
 	            'a',
 	            { href: 'https://www.linkedin.com/in/kenneth-kier-09260282' },
-	            React.createElement('img', { className: 'link-icon', title: 'LinkedIn', alt: 'LinkedIn', src: './style/img/icons/linkedin.svg' })
+	            React.createElement('img', { className: 'link-icon', title: 'LinkedIn', alt: 'LinkedIn', src: '../style/img/icons/linkedin.svg' })
 	          )
 	        ),
 	        React.createElement(
@@ -24326,12 +24326,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	          React.createElement(
 	            'a',
 	            { href: 'https://www.facebook.com/KenJamin1989' },
-	            React.createElement('img', { className: 'link-icon', title: 'Facebook', alt: 'Facebook', src: './style/img/icons/facebook-square.svg' })
+	            React.createElement('img', { className: 'link-icon', title: 'Facebook', alt: 'Facebook', src: '../style/img/icons/facebook-square.svg' })
 	          ),
 	          React.createElement(
 	            'a',
 	            { href: 'mailto:kennethjk3@gmail.com' },
-	            React.createElement('img', { className: 'link-icon', title: 'Gmail', alt: 'Gmail', src: './style/img/icons/mail.svg' })
+	            React.createElement('img', { className: 'link-icon', title: 'Gmail', alt: 'Gmail', src: '../style/img/icons/mail.svg' })
 	          )
 	        )
 	      )

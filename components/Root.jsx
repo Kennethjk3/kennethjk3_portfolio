@@ -20,7 +20,6 @@ var Root = React.createClass({
           <div className="content-main">
           <RouteHandler {...this.props} />
           <script src="bundle.js"></script>
-
           </div>
           <Footer />
         </body>
