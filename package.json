@@ -27,8 +27,8 @@
     "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
-    "react": "^0.13.3",
-    "react-router": "^0.13.5",
-    "history": "^1.13.0"
+    "history": "^1.13.1",
+    "react": "^0.14.3",
+    "react-router": "^1.0.0"
   }
 }

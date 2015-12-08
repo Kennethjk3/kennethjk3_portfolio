@@ -1,6 +1,8 @@
-var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
+var webpack = require('webpack');
+var path = require('path');
 var data = require('./data')
-var path = require("path");
+
+var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 
 
 module.exports = {
@@ -18,9 +20,11 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.jsx$/,
+      exclude: /node_modules/,
       loader: 'babel'
     }, {
       test: /\.scss$/,
+      exclude: /node_modules/,
       loader: "css-loader!sass-loader"
     }]
   },

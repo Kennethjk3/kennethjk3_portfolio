@@ -1,6 +1,7 @@
 var React = require('react')
-var Router = require('react-router')
+import { Router, Route } from 'react-router';
 var RouteHandler = Router.RouteHandler
+
 var Header = require('../components/Header.jsx')
 var Footer = require('../components/Footer.jsx')
 
@@ -19,11 +20,12 @@ var Root = React.createClass({
         <body>
           <Header />
           <div className="content-main">
-          <RouteHandler {...this.props} />
             <script
               id='initial-props'
               type='application/json'/>
             <script src='bundle.js' />
+            <RouteHandler {...this.props} />
+
           </div>
           <Footer />
         </body>

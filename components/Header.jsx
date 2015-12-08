@@ -1,6 +1,6 @@
 var React = require('react')
-var Router = require('react-router')
-var Link = Router.Link
+import { Router, Route, Link } from 'react-router';
+
 
 var Header = React.createClass({
   render: function() {
