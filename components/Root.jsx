@@ -1,5 +1,6 @@
+
 var React = require('react')
-import { Router, Route } from 'react-router';
+var Router = require('react-router')
 var RouteHandler = Router.RouteHandler
 
 var Header = require('../components/Header.jsx')
@@ -9,8 +10,10 @@ var css = require('../style/root.scss');
 
 
 var Root = React.createClass({
+  propTypes: {
+    title: React.PropTypes.string
+  },
   render: function () {
-
     return (
       <html>
         <head>
@@ -18,23 +21,18 @@ var Root = React.createClass({
           <style dangerouslySetInnerHTML={{ __html: css }} />
         </head>
         <body>
-          <Header />
+          <Header {...this.props} />
           <div className="content-main">
-            <script
-              id='initial-props'
-              type='application/json'/>
-            <script src='bundle.js' />
             <RouteHandler {...this.props} />
-
           </div>
-          <Footer />
+          <Footer {...this.props} />
+          <script src='bundle.js' />
+
         </body>
       </html>
     )
   }
 })
 
-function safeStringify(obj) {
-  return JSON.stringify(obj).replace(/<\/script/g, '<\\/script').replace(/<!--/g, '<\\!--')
-}
+
 module.exports = Root

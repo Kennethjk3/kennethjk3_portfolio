@@ -1,12 +1,18 @@
 var React = require('react')
 
+var Header = require('../components/Header.jsx')
+
+
 var Resume = React.createClass({
 
   render: function() {
     return (
+      <main>
       <div>
-        Hi
+        <Header {...this.props} />
+
       </div>
+    </main>
     )
   }
 })

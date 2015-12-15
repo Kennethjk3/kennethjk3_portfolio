@@ -1,8 +1,11 @@
 var React = require('react')
-import { Router, Route, Link } from 'react-router';
-
+var Router = require('react-router')
+var Link = Router.Link
 
 var Header = React.createClass({
+  propTypes: {
+    title: React.PropTypes.string
+  },
   render: function() {
     return (
       <header>
@@ -13,16 +16,16 @@ var Header = React.createClass({
               <Link to='/'>Home</Link>
             </li>
             <li className="nav-li">
-              <Link to='/about'>About</Link>
+              <Link to='/about' activeClassName="active">About</Link>
             </li>
             <li className="nav-li">
-              <Link to='/project'>Projects</Link>
+              <Link to='/project' activeClassName="active">Projects</Link>
             </li>
             <li className="nav-li">
-              <Link to='/resume'>Resume</Link>
+              <Link to='/resume' activeClassName="active">Resume</Link>
             </li>
             <li className="nav-li">
-              <Link to='/contact'>Contact Me</Link>
+              <Link to='/contact' activeClassName="active">Contact Me</Link>
             </li>
           </ul>
           <hr/>
