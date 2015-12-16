@@ -1,31 +1,43 @@
-var React = require('react')
 
+import React from 'react';
+import Button from 'react-bootstrap/lib/Button';
+import Grid from 'react-bootstrap/lib/Grid';
+import Jumbotron from 'react-bootstrap/lib/Jumbotron';
+import Row from 'react-bootstrap/lib/Row';
+import Col from 'react-bootstrap/lib/Col';
+var LearnMore = require('../components/Learn.jsx');
 
-var Project = React.createClass({
-  render: function () {
+export default class Project extends React.Component {
+  render() {
     return (
-      <main>
-        <h1>Project component</h1>
-          <h3>But with the blast shield down, I can't even see! How am I supposed to fight?</h3>
-<p>Dantooine. They're on Dantooine. Partially, but it also obeys your commands. I can't get involved! I've got work to do! It's not that I like the Empire, I hate it, but there's nothing I can do about it right now. It's such a long way from here.</p>
-<ul>
-<li>You don't believe in the Force, do you?</li><li>She must have hidden the plans in the escape pod. Send a detachment down to retrieve them, and see to it personally, Commander. There'll be no one to stop us this time!</li><li>I have traced the Rebel spies to her. Now she is my only link to finding their secret base.</li>
-</ul>
-
-<p>A tremor in the Force. The last time I felt it was in the presence of my old master. Hey, Luke! May the Force be with you. Escape is not his plan. I must face him, alone. Remember, a Jedi can feel the Force flowing through him.</p>
-<p>The plans you refer to will soon be back in our hands. Your eyes can deceive you. Don't trust them. Ye-ha! Dantooine. They're on Dantooine. Alderaan? I'm not going to Alderaan. I've got to go home. It's late, I'm in for it as it is.</p>
-<p>The more you tighten your grip, Tarkin, the more star systems will slip through your fingers. The plans you refer to will soon be back in our hands. Your eyes can deceive you. Don't trust them. I can't get involved! I've got work to do! It's not that I like the Empire, I hate it, but there's nothing I can do about it right now. It's such a long way from here.</p>
-<p>Look, I can take you as far as Anchorhead. You can get a transport there to Mos Eisley or wherever you're going. Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force.</p>
-<p>Red Five standing by. You mean it controls your actions? I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me.</p>
-<p>You are a part of the Rebel Alliance and a traitor! Take her away! The plans you refer to will soon be back in our hands. I'm trying not to, kid. Red Five standing by. Red Five standing by.</p>
-<p>You're all clear, kid. Let's blow this thing and go home! I find your lack of faith disturbing. What!? But with the blast shield down, I can't even see! How am I supposed to fight? Still, she's got a lot of spirit. I don't know, what do you think?</p>
-<p>I can't get involved! I've got work to do! It's not that I like the Empire, I hate it, but there's nothing I can do about it right now. It's such a long way from here. Hey, Luke! May the Force be with you.</p>
-<p>Dantooine. They're on Dantooine. I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me. I care. So, what do you think of her, Han?</p>
-<p>I care. So, what do you think of her, Han? I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me. I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me.</p>
-<p>I'm trying not to, kid. You don't believe in the Force, do you? I need your help, Luke. She needs your help. I'm getting too old for this sort of thing. As you wish. Look, I can take you as far as Anchorhead. You can get a transport there to Mos Eisley or wherever you're going.</p>
-      </main>
-    )
+      <div>
+        <Jumbotron>
+          <Grid>
+            <h1>Hello, world!</h1>
+            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+            <LearnMore />
+          </Grid>
+        </Jumbotron>
+        <Grid>
+          <Row>
+            <Col md={4}>
+              <h2>Heading</h2>
+              <p>Adipisicing ratione incidunt eaque expedita rerum porro inventore. Nihil sit ipsam iure officiis sit eos at quibusdam natus dignissimos natus dolore! Vel doloremque ipsa alias nihil harum laborum necessitatibus rerum?</p>
+              <p><Button>View details »</Button></p>
+            </Col>
+            <Col md={4}>
+              <h2>Heading</h2>
+              <p>Sit quia nemo quis enim provident porro eaque accusamus tenetur provident aliquid commodi? Velit nesciunt maiores obcaecati totam praesentium sint vitae exercitationem quaerat maxime iusto et! Consequatur aspernatur sit impedit.</p>
+              <p><Button>View details »</Button></p>
+            </Col>
+            <Col md={4}>
+              <h2>Heading</h2>
+              <p>Dolor aliquid dolores perferendis repellendus cum! Quam maiores blanditiis cupiditate voluptatibus voluptas aliquid nisi placeat tempora. Rem debitis accusamus pariatur officia corrupti. Architecto fuga reiciendis quos rem hic? Suscipit dignissimos.</p>
+              <p><Button>View details »</Button></p>
+            </Col>
+          </Row>
+        </Grid>
+      </div>
+    );
   }
-})
-
-module.exports = Project
+}

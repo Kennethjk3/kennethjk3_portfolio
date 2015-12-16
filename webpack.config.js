@@ -20,9 +20,14 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel'
     }, {
-      test: /\.scss$/,
-      exclude: /node_modules/,
-      loader: "css-loader!sass-loader"
+      test: /\.less/,
+      loader: 'style!css!less'
+    }, {
+      test: /\.css/,
+      loader: 'style!css'
+    }, {
+      test: /\.woff2$|\.woff$|\.ttf$|\.svg$|\.eot$/i,
+      loader: 'file'
     }]
   },
 

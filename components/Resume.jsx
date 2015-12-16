@@ -1,20 +1,24 @@
 var React = require('react')
 
-var Header = require('../components/Header.jsx')
+import NavbarBrand from 'react-bootstrap/lib/NavbarBrand';
+import Nav from 'react-bootstrap/lib/Nav';
+import NavItem from 'react-bootstrap/lib/NavItem';
+import Input from 'react-bootstrap/lib/Input';
+import Button from 'react-bootstrap/lib/Button';
 
-
-var Resume = React.createClass({
-
-  render: function() {
+export default class Resume extends React.Component {
+  render() {
+    let brand = <a href='#'>Project Name</a>;
     return (
-      <main>
-      <div>
-        <Header {...this.props} />
-
-      </div>
-    </main>
-    )
+      <NavbarBrand fixedTop inverse toggleNavKey={0}>
+        <Nav pullright eventKey={0}>
+          <form className='navbar-form' action="">
+            <Input type='text' placeholder='email' />{' '}
+            <Input type='text' placeholder='password' />{' '}
+            <Button bsStyle='success' type='submit'>Sign in</Button>
+          </form>
+        </Nav>
+      </NavbarBrand>
+    );
   }
-})
-
-module.exports = Resume
+}

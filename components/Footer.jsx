@@ -1,23 +1,15 @@
 var React = require('react')
-var Router = require('react-router')
-var Link = Router.Link
+import Grid from 'react-bootstrap/lib/Grid';
 
-
-
-var Footer = React.createClass({
-  render: function () {
+export default class Footer extends React.Component {
+  render() {
     return (
-      <footer>
-        <div className="footer">
-          <hr />
-          <p>
-            This site is designed using <a href="https://facebook.github.io/react/index.html">React</a>!
-            </p>
-        </div>
-      </footer>
-
-    )
+      <Grid>
+        <hr />
+        <footer>
+          Build using React!
+        </footer>
+      </Grid>
+    );
   }
-})
-
-module.exports = Footer
+}

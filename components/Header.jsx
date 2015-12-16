@@ -31,7 +31,6 @@ var Header = React.createClass({
           <hr/>
         </div>
       </header>
-
     )
   }
 })
