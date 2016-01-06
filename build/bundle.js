@@ -23770,7 +23770,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          React.createElement(RouteHandler, this.props)
 	        ),
 	        React.createElement(Footer, this.props),
-	        React.createElement('script', { src: 'bundle.js' })
+	        React.createElement('script', { src: '../build/bundle.js' })
 	      )
 	    );
 	  }
@@ -23801,7 +23801,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      React.createElement(
 	        'div',
 	        { classgit: true, Name: 'nav' },
-	        React.createElement('img', { className: 'picK', src: '../style/img/K2.png' }),
+	        React.createElement('img', { className: 'picK', src: './src/style/img/K2.png' }),
 	        React.createElement(
 	          'ul',
 	          { className: 'nav-ul' },
@@ -23850,8 +23850,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              'Contact Me'
 	            )
 	          )
-	        ),
-	        React.createElement('hr', null)
+	        )
 	      )
 	    );
 	  }
@@ -23879,7 +23878,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	      React.createElement(
 	        'div',
 	        { className: 'footer' },
-	        React.createElement('hr', null),
 	        React.createElement(
 	          'p',
 	          null,
@@ -23907,7 +23905,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, ".about-columnleft,\n.about-columnright {\n  position: relative; }\n\n.about-columnleft {\n  float: left;\n  width: 49%; }\n\n.about-columnright {\n  float: right;\n  width: 49%;\n  text-align: right; }\n\n.nav {\n  margin-top: .1em; }\n\n.nav-ul {\n  width: 100%;\n  list-style-type: none;\n  display: inline-block;\n  text-align: center;\n  line-height: 30px; }\n\n.nav-li {\n  position: relative;\n  display: inline;\n  margin-right: 50px;\n  font-family: 'Oswald', sans-serif;\n  font-size: 1.2em; }\n  .nav-li a {\n    text-decoration: none;\n    border-radius: 20px;\n    color: #00b1fc; }\n    .nav-li a:hover {\n      font-size: 40px; }\n\n.picK {\n  position: absolute;\n  display: inline-block;\n  height: 75px;\n  width: 75px;\n  opacity: .7; }\n\n.footer {\n  width: 100%;\n  list-style-type: none;\n  text-align: right;\n  position: absolute;\n  float: bottom;\n  height: 60px; }\n  .footer a {\n    color: #00b1fc;\n    text-decoration: none; }\n    .footer a:hover {\n      color: inherit;\n      font-size: 25px; }\n\n.contact {\n  text-align: center; }\n  .contact .link-icon {\n    margin: 20px;\n    height: 300px;\n    width: 300px; }\n\n.home-container {\n  text-align: center;\n  margin-top: 15%; }\n  .home-container .picMe {\n    margin-right: 50px;\n    vertical-align: middle;\n    height: 500px;\n    width: 500px;\n    border-radius: 250px;\n    opacity: 0.7;\n    -moz-box-shadow: 0 0 75px rgba(0, 0, 0, 0.8);\n    -webkit-box-shadow: 0 0 75px rgba(0, 0, 0, 0.8);\n    box-shadow: 0 0 75px rgba(0, 0, 0, 0.8); }\n\n.home-text {\n  margin-left: 50px;\n  position: relative;\n  width: auto;\n  vertical-align: middle;\n  display: inline-block;\n  font-size: 36px;\n  text-align: right; }\n\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  width: 100%;\n  font-family: 'Avenir Next', 'Hevletica Neue', sans-serif;\n  color: #c1c1c1; }\n\nbody {\n  background-image: url(/style/img/bg.jpg);\n  background-repeat: no-repeat;\n  background-color: black; }\n\n.content-main {\n  margin: 20px 50px 0 75px;\n  overflow: scroll;\n  height: 100%;\n  min-height: 100%; }\n\n::-webkit-scrollbar {\n  display: none; }\n", ""]);
+	exports.push([module.id, ".about-columnleft,\n.about-columnright {\n  position: relative; }\n\n.about-columnleft {\n  float: left;\n  width: 49%; }\n\n.about-columnright {\n  float: right;\n  width: 49%;\n  text-align: right; }\n\n.nav {\n  margin-top: .1em; }\n\n.nav-ul {\n  width: 90%;\n  list-style-type: none;\n  display: inline-block;\n  text-align: center;\n  line-height: 30px; }\n\n.nav-li {\n  position: relative;\n  display: inline;\n  margin-right: 50px;\n  font-family: 'Oswald', sans-serif;\n  font-size: 1.2em; }\n  .nav-li a {\n    text-decoration: none;\n    border-radius: 20px;\n    color: #00b1fc; }\n    .nav-li a:hover {\n      font-size: 40px; }\n\n.picK {\n  position: absolute;\n  display: inline-block;\n  height: 75px;\n  width: 75px;\n  opacity: .7; }\n\n.footer {\n  width: 90%;\n  height: 60px;\n  list-style-type: none;\n  text-align: center;\n  position: absolute;\n  float: bottom; }\n  .footer a {\n    color: #00b1fc;\n    text-decoration: none; }\n    .footer a:hover {\n      color: inherit;\n      font-size: 25px; }\n\n.contact {\n  text-align: center; }\n  .contact .link-icon {\n    margin: 20px;\n    height: 300px;\n    width: 300px; }\n\n.home-container {\n  text-align: center;\n  margin-top: 15%; }\n  .home-container .picMe {\n    margin-right: 50px;\n    vertical-align: middle;\n    height: 500px;\n    width: 500px;\n    border-radius: 250px;\n    opacity: 0.7;\n    -moz-box-shadow: 0 0 75px rgba(0, 0, 0, 0.8);\n    -webkit-box-shadow: 0 0 75px rgba(0, 0, 0, 0.8);\n    box-shadow: 0 0 75px rgba(0, 0, 0, 0.8); }\n\n.home-text {\n  margin-left: 50px;\n  position: relative;\n  width: auto;\n  vertical-align: middle;\n  display: inline-block;\n  font-size: 36px;\n  text-align: right; }\n\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  width: 100%;\n  font-family: 'Avenir Next', 'Hevletica Neue', sans-serif;\n  color: #c1c1c1; }\n\nbody {\n  background-image: url(\"/src/style/img/Background.jpg\");\n  background-repeat: no-repeat;\n  background-color: black; }\n\n.content-main {\n  margin: 20px 100px 0 100px;\n  overflow: scroll;\n  height: 100%;\n  min-height: 100%; }\n", ""]);
 
 	// exports
 
@@ -23986,7 +23984,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      React.createElement(
 	        "div",
 	        { className: "home-container" },
-	        React.createElement("img", { className: "picMe", src: "../style/img/headshot.jpg" }),
+	        React.createElement("img", { className: "picMe", src: "./src/style/img/headshot.jpg" }),
 	        React.createElement(
 	          "p",
 	          { className: "home-text" },
@@ -24294,11 +24292,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return React.createElement(
 	      'main',
 	      null,
-	      React.createElement(
-	        'div',
-	        null,
-	        React.createElement(Header, this.props)
-	      )
+	      React.createElement('div', null)
 	    );
 	  }
 	});
