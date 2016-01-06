@@ -1,0 +1,16 @@
+.about-container {
+
+}
+.about-columnleft,
+.about-columnright {
+  position: relative;
+}
+.about-columnleft {
+  float: left;
+  width: 49%;
+}
+.about-columnright {
+  float: right;
+  width: 49%;
+  text-align: right;
+}
