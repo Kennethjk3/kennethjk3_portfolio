@@ -26,7 +26,7 @@ var Root = React.createClass({
             <RouteHandler {...this.props} />
           </div>
           <Footer {...this.props} />
-          <script src='bundle.js' />
+          <script src='../build/bundle.js' />
 
         </body>
       </html>

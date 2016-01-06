@@ -1,10 +1,10 @@
 .footer {
-  width           : 100%;
+  width           : 90%;
+  height          : 60px;
   list-style-type : none;
-  text-align      : right;
+  text-align      : center;
   position        : absolute;
   float           : bottom;
-  height          : 60px;
   & a {
     color          : #00b1fc;
     text-decoration: none;

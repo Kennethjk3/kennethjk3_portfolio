@@ -1,15 +1,15 @@
 var webpack = require('webpack');
-var data = require('./data')
-
-var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
+var data = require('./src/data');
+var path = require ('path');
+var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
 
 module.exports = {
-  entry: './entry.js',
+  entry: ['./src/entry.js'],
 
 
   output: {
-    path: __dirname,
+    path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
     libraryTarget: 'umd'
   },

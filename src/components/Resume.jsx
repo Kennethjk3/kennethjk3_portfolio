@@ -9,7 +9,6 @@ var Resume = React.createClass({
     return (
       <main>
       <div>
-        <Header {...this.props} />
 
       </div>
     </main>

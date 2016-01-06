@@ -9,7 +9,6 @@ var Footer = React.createClass({
     return (
       <footer>
         <div className="footer">
-          <hr />
           <p>
             This site is designed using <a href="https://facebook.github.io/react/index.html">React</a>!
             </p>
