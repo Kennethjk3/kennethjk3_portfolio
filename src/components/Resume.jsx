@@ -9,7 +9,7 @@ var Resume = React.createClass({
     return (
       <main>
       <div>
-
+        hi
       </div>
     </main>
     )

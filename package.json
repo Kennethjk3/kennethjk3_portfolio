@@ -12,29 +12,27 @@
     "Ken",
     "K"
   ],
-
   "scripts": {
     "webpack": "webpack --progress --colors",
     "dev": "webpack-dev-server --progress --colors",
     "start": "npm run dev"
   },
-
   "dependencies": {
-    "babel": "^5.8.23",
+    "babel": "^6.3.26",
     "history": "^1.16.0",
-    "react": "^0.13.3",
-    "react-router": "^0.13.3",
-    "json-loader": "^0.5.2"
+    "json-loader": "^0.5.2",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "react-router": "^1.0.3"
   },
-
   "devDependencies": {
-    "babel-loader": "^5.3.2",
-    "css-loader": "^0.22.0",
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "css-loader": "^0.23.1",
     "node-sass": "^3.4.2",
     "sass-loader": "^3.1.1",
-    "static-site-generator-webpack-plugin": "^1.2.0",
+    "static-site-generator-webpack-plugin": "^2.0.1",
     "webpack": "^1.12.3",
     "webpack-dev-server": "^1.12.1"
   }
-
 }

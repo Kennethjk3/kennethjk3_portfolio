@@ -23,10 +23,11 @@ var Root = React.createClass({
         <body>
           <Header {...this.props} />
           <div className="content-main">
-            <RouteHandler {...this.props} />
+            {this.props.children}
           </div>
+
           <Footer {...this.props} />
-          <script src='../build/bundle.js' />
+          <script src='./bundle.js' />
 
         </body>
       </html>
